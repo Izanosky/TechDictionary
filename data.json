@@ -1346,6 +1346,15 @@
               "tags": [
                 "animación"
               ]
+            },
+            {
+              "nombre": "dithercn",
+              "url": "https://github.com/opencoredev/dithercn",
+              "desc": "Motor de efectos dither para shadcn: 52 componentes (fondos, gráficas, texto, botones) y una skill para que el agente cree los suyos.",
+              "tags": [
+                "open source",
+                "animación"
+              ]
             }
           ]
         },
@@ -3109,6 +3118,11 @@
               "nombre": "Cómo ser más ambicioso con los modelos",
               "url": "https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/",
               "desc": "Felix Rieseberg (Claude): pedir el resultado de fondo, hacerlo como un experto y verificarlo fuera del modelo."
+            },
+            {
+              "nombre": "Claude Code's Next Era (Latent Space)",
+              "url": "https://latent.space/p/thariq",
+              "desc": "Entrevista a Thariq Shihipar, del equipo de Claude Code: dar el contexto al principio, CLAUDE.md mínimo, anotar decisiones y descubrir lo que no sabes antes de programar."
             }
           ]
         },
@@ -3130,40 +3144,6 @@
               "tags": [
                 "open source"
               ]
-            }
-          ]
-        },
-        {
-          "nombre": "Documentos para IA (PDF a Markdown)",
-          "enlaces": [
-            {
-              "nombre": "MarkItDown",
-              "url": "https://github.com/microsoft/markitdown",
-              "desc": "De Microsoft: convierte PDF, Office, HTML e imágenes a Markdown. Ligero, sin GPU.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "Docling",
-              "url": "https://github.com/docling-project/docling",
-              "desc": "De IBM: PDFs con tablas y estructura a Markdown o JSON, en local.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "MinerU",
-              "url": "https://github.com/opendatalab/MinerU",
-              "desc": "PDF escaneados, tablas y fórmulas a Markdown/JSON con OCR. Desde la 3.1 usa una licencia propia basada en Apache 2.0 (antes AGPL).",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "OXR",
-              "url": "https://github.com/SoMarkAI/OXR",
-              "desc": "Modelo de 1,3B (oct. 2026) que parsea documentos con coordenadas de cada elemento. Sus benchmarks son propios y necesita GPU de 24 GB; pruébalo solo si los anteriores se quedan cortos."
             }
           ]
         }
@@ -3686,6 +3666,226 @@
       ]
     },
     {
+      "id": "documentos",
+      "grupo": "Herramientas",
+      "nombre": "Documentos y conversión",
+      "desc": "Convertir, extraer y preparar documentos, vídeo, imágenes y webs; también para dárselos a una IA.",
+      "secciones": [
+        {
+          "nombre": "PDF y documentos a Markdown",
+          "enlaces": [
+            {
+              "nombre": "MarkItDown",
+              "url": "https://github.com/microsoft/markitdown",
+              "desc": "De Microsoft: convierte PDF, Office, HTML e imágenes a Markdown. Ligero, sin GPU.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Docling",
+              "url": "https://github.com/docling-project/docling",
+              "desc": "De IBM: PDFs con tablas y estructura a Markdown o JSON, en local.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "MinerU",
+              "url": "https://github.com/opendatalab/MinerU",
+              "desc": "PDF escaneados, tablas y fórmulas a Markdown/JSON con OCR. Desde la 3.1 usa una licencia propia basada en Apache 2.0 (antes AGPL).",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Marker",
+              "url": "https://github.com/datalab-to/marker",
+              "desc": "PDF a Markdown muy preciso con modelos propios. Código GPL; los modelos son gratis solo para uso personal o empresas pequeñas.",
+              "tags": [
+                "source-available"
+              ]
+            },
+            {
+              "nombre": "OXR",
+              "url": "https://github.com/SoMarkAI/OXR",
+              "desc": "Modelo de 1,3B (oct. 2026) que parsea documentos con coordenadas de cada elemento. Sus benchmarks son propios y necesita GPU de 24 GB; pruébalo solo si los anteriores se quedan cortos."
+            }
+          ]
+        },
+        {
+          "nombre": "Web a Markdown (para IA)",
+          "enlaces": [
+            {
+              "nombre": "Jina Reader",
+              "url": "https://jina.ai/reader/",
+              "desc": "Antepón r.jina.ai/ a cualquier URL y obtienes la página en Markdown limpio.",
+              "tags": [
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "Crawl4AI",
+              "url": "https://github.com/unclecode/crawl4ai",
+              "desc": "Rastreador en Python que saca webs a Markdown listo para LLMs.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Firecrawl",
+              "url": "https://www.firecrawl.dev/",
+              "desc": "Rastrea webs enteras a Markdown o JSON; autoalojable (AGPL) o en la nube con plan gratis.",
+              "tags": [
+                "open source",
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "Trafilatura",
+              "url": "https://trafilatura.readthedocs.io/",
+              "desc": "Extrae el texto principal de una página quitando menús y anuncios.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Convertir formatos",
+          "enlaces": [
+            {
+              "nombre": "Pandoc",
+              "url": "https://pandoc.org/",
+              "desc": "La navaja suiza de documentos: Markdown, Word, PDF, HTML, LaTeX, EPUB…",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "FFmpeg",
+              "url": "https://ffmpeg.org/",
+              "desc": "Convierte, recorta y comprime cualquier vídeo o audio desde la terminal.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "ImageMagick",
+              "url": "https://imagemagick.org/",
+              "desc": "Convierte y edita imágenes por lotes desde la terminal.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "HandBrake",
+              "url": "https://handbrake.fr/",
+              "desc": "Recomprime vídeos con interfaz gráfica.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "LibreOffice",
+              "url": "https://www.libreoffice.org/",
+              "desc": "Suite ofimática libre; en modo headless convierte Office a PDF por lotes.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "OCR (texto de imágenes)",
+          "enlaces": [
+            {
+              "nombre": "Tesseract",
+              "url": "https://github.com/tesseract-ocr/tesseract",
+              "desc": "El motor de OCR clásico, con más de 100 idiomas.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "OCRmyPDF",
+              "url": "https://ocrmypdf.readthedocs.io/",
+              "desc": "Añade una capa de texto buscable a PDFs escaneados.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "PaddleOCR",
+              "url": "https://github.com/PaddlePaddle/PaddleOCR",
+              "desc": "OCR moderno con buena precisión en tablas y textos difíciles.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Herramientas PDF",
+          "enlaces": [
+            {
+              "nombre": "Stirling-PDF",
+              "url": "https://www.stirlingpdf.com/",
+              "desc": "Unir, dividir, comprimir, firmar y convertir PDFs; autoalojable.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "PDF24 Tools",
+              "url": "https://tools.pdf24.org/es/",
+              "desc": "Decenas de herramientas PDF gratis en el navegador o como app de Windows.",
+              "tags": [
+                "español"
+              ]
+            },
+            {
+              "nombre": "qpdf",
+              "url": "https://qpdf.sourceforge.io/",
+              "desc": "Manipula PDFs desde la terminal: unir, cifrar, reparar.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "PDF.js",
+              "url": "https://mozilla.github.io/pdf.js/",
+              "desc": "Visor de PDF de Mozilla para incrustar en tu web.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Datos (JSON y CSV)",
+          "enlaces": [
+            {
+              "nombre": "jq",
+              "url": "https://jqlang.org/",
+              "desc": "Filtra y transforma JSON desde la terminal.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "VisiData",
+              "url": "https://www.visidata.org/",
+              "desc": "Explora CSV, Excel y JSON como una hoja de cálculo en la terminal.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "al-dia",
       "grupo": "Recursos",
       "nombre": "Estar al día",
@@ -3894,6 +4094,14 @@
               "nombre": "Figma",
               "url": "https://www.figma.com/",
               "desc": "El estándar para diseñar interfaces; plan gratis limitado.",
+              "tags": [
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "Rikyū",
+              "url": "https://rikyu.ai/",
+              "desc": "Logos construidos con geometría real (círculos y retícula) y exportables en vectorial, no imágenes generadas. Uso gratis con plan Pro de pago.",
               "tags": [
                 "freemium"
               ]
