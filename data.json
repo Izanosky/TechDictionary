@@ -208,7 +208,7 @@
         ]},
         { "nombre": "Herramientas", "enlaces": [
           { "nombre": "pnpm", "url": "https://pnpm.io/", "desc": "Gestor de paquetes rápido que ahorra disco.", "tags": ["open source"] },
-          { "nombre": "tsx", "url": "https://tsx.is/", "desc": "Ejecuta TypeScript directamente sin configuración.", "tags": ["open source"] }
+          { "nombre": "tsx", "url": "https://github.com/privatenumber/tsx", "desc": "Ejecuta TypeScript directamente sin configuración.", "tags": ["open source"] }
         ]}
       ]
     },
