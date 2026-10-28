@@ -21,54 +21,70 @@
   * { box-sizing: border-box; }
   body { margin: 0; min-height: 100vh; color: var(--fg);
     background: radial-gradient(60rem 30rem at 50% -10rem, var(--glow), transparent), var(--bg); }
-  .wrap { max-width: 80rem; margin: 0 auto; padding: 0 1.25rem; }
-  a:focus-visible, input:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .wrap { max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; }
+  a:focus-visible, input:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .serif, h1, h2, main h3 { font-family: 'Instrument Serif', serif; font-weight: 400; }
+  em { color: var(--accent); }
 
-  .hero { padding: 4rem 1.25rem 2.5rem; }
-  h1 { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(2.5rem, 6vw, 4rem); line-height: 1; margin: 0; letter-spacing: -.02em; }
-  h1 em, .marca em { color: var(--accent); }
-  .hero p { color: var(--muted); max-width: 36rem; margin: .75rem 0 0; }
+  /* Cabecera */
+  header { position: sticky; top: 0; z-index: 10; backdrop-filter: blur(12px); background: color-mix(in srgb, var(--bg) 82%, transparent); border-bottom: 1px solid var(--line); }
+  .bar { position: relative; display: flex; align-items: center; gap: 1rem; height: 3.75rem; }
+  .marca { font-family: 'Instrument Serif', serif; font-size: 1.6rem; line-height: 1; color: var(--fg); text-decoration: none; white-space: nowrap; }
+  details { margin-right: auto; }
+  summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: .4rem; padding: .4rem .85rem; border: 1px solid var(--line); border-radius: 999px; background: var(--card); font-size: .9rem; font-weight: 500; user-select: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: ''; width: .4rem; height: .4rem; border: solid currentColor; border-width: 0 1.5px 1.5px 0; transform: translateY(-2px) rotate(45deg); transition: transform .2s; }
+  details[open] summary::after { transform: translateY(1px) rotate(-135deg); }
+  .panel { position: absolute; top: calc(100% + .5rem); left: 1.25rem; right: 1.25rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); gap: 1.5rem; padding: 1.5rem; background: var(--bg); border: 1px solid var(--line); border-radius: 1rem; box-shadow: 0 20px 50px -20px #0008; }
+  .panel h4 { font-size: .7rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 600; margin: 0 0 .5rem .6rem; }
+  .panel a { display: block; padding: .3rem .6rem; border-radius: .5rem; color: var(--fg); text-decoration: none; font-size: .9rem; }
+  .panel a:hover { background: var(--line); }
+  .panel a[aria-current] { color: var(--accent); }
+  input { width: min(16rem, 40vw); font: inherit; font-size: .9rem; color: inherit; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: .4rem .9rem; }
 
-  .layout { display: grid; grid-template-columns: 14rem 1fr; gap: 3rem; align-items: start; }
-  aside { position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow-y: auto; padding-bottom: 1rem; scrollbar-width: thin; }
-  input { width: 100%; font: inherit; font-size: .9rem; color: inherit; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: .45rem .9rem; }
-  aside h3 { font-size: .7rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 600; margin: 1.5rem 0 .4rem .75rem; }
-  #tabs a { display: block; padding: .3rem .75rem; border-radius: .5rem; color: var(--muted); text-decoration: none; font-size: .9rem; font-weight: 500; transition: color .15s, background .15s; }
-  #tabs a:hover { color: var(--fg); }
-  #tabs a[aria-current] { background: var(--fg); color: var(--bg); }
-  .tags { display: flex; flex-wrap: wrap; gap: .35rem; }
-  .tags button { font: inherit; font-size: .75rem; color: var(--muted); background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: .15rem .65rem; cursor: pointer; transition: color .15s, border-color .15s; }
+  /* Contenido */
+  main.wrap { padding-bottom: 5rem; min-height: 60vh; }
+  .hero { padding: 4.5rem 0 1rem; }
+  h1 { font-size: clamp(2.75rem, 7vw, 4.5rem); line-height: 1; margin: 0; letter-spacing: -.02em; }
+  .hero .lead { font-size: 1.15rem; max-width: 40rem; margin: 1.25rem 0 0; }
+  .hero p { color: var(--muted); max-width: 40rem; margin: .75rem 0 0; }
+  .stats { display: flex; flex-wrap: wrap; gap: 2.5rem; margin-top: 2rem; }
+  .stats b { display: block; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 2.25rem; line-height: 1; color: var(--fg); }
+  .stats span { color: var(--muted); font-size: .85rem; }
+  .cat { padding-top: 3rem; }
+  h2 { font-size: 2.5rem; line-height: 1.1; margin: 0; }
+  .cat p { color: var(--muted); margin: .4rem 0 0; }
+  main h3 { font-size: 1.6rem; margin: 2.5rem 0 1rem; }
+  main h3 small { font-family: Inter, sans-serif; font-size: .8rem; color: var(--muted); margin-left: .5rem; }
+  .grupo { font-family: Inter, sans-serif; font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 600; margin: 2rem 0 .75rem; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: 1.25rem; }
+  .tags button { font: inherit; font-size: .78rem; color: var(--muted); background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: .2rem .7rem; cursor: pointer; transition: color .15s, border-color .15s; }
   .tags button:hover { color: var(--fg); border-color: var(--muted); }
   .tags button[aria-pressed="true"] { color: var(--accent); border-color: var(--accent); }
 
-  main { padding-bottom: 4rem; min-width: 0; }
-  .cat h2 { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 2.5rem; line-height: 1.1; margin: 0; }
-  .cat p { color: var(--muted); margin: .4rem 0 0; }
-  main h3 { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 1.6rem; margin: 2.25rem 0 1rem; }
-  main h3 small { font-family: Inter, sans-serif; font-size: .8rem; color: var(--muted); margin-left: .5rem; }
-  ul { list-style: none; padding: 0; margin: 0; display: grid; gap: .75rem; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); }
+  ul { list-style: none; padding: 0; margin: 0; display: grid; gap: .75rem; grid-template-columns: repeat(auto-fill, minmax(min(16rem, 100%), 1fr)); }
   li { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: 1rem; padding: 1rem 1.1rem; transition: border-color .2s, transform .2s; }
   li:hover { border-color: var(--accent); transform: translateY(-2px); }
   li .head { display: flex; align-items: center; gap: .6rem; }
   li img { width: 20px; height: 20px; border-radius: 4px; flex: none; }
   li a { color: var(--fg); font-weight: 600; text-decoration: none; }
   li a::after { content: ''; position: absolute; inset: 0; border-radius: inherit; }
-  li .dom { color: var(--muted); font-size: .75rem; margin-left: auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 45%; }
+  li .dom { color: var(--muted); font-size: .75rem; margin-left: auto; white-space: nowrap; }
+  li .pie { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem; margin-top: .6rem; }
+  li .pie .dom { margin: 0 .3rem 0 0; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
   li p { margin: .5rem 0 0; color: var(--muted); font-size: .9rem; }
-  li .chips { display: flex; flex-wrap: wrap; gap: .3rem; margin-top: .6rem; }
-  li .chips span { font-size: .7rem; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: .05rem .5rem; }
+  li .pie span:not(.dom) { font-size: .7rem; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: .05rem .5rem; }
 
-  @media (max-width: 860px) {
-    .layout { grid-template-columns: 1fr; gap: 1.5rem; }
-    aside { position: static; max-height: none; }
-    #tabs { display: flex; flex-wrap: wrap; gap: .25rem; align-items: center; }
-    aside h3 { width: 100%; margin: 1rem 0 .2rem; }
-    #tabs a { display: inline-block; border-radius: 999px; }
+  @media (max-width: 640px) {
+    .marca { font-size: 1.3rem; }
+    .bar { gap: .5rem; }
+    input { width: 8.5rem; }
   }
 
-  footer { color: var(--muted); font-size: .875rem; border-top: 1px solid var(--line); margin-top: 2rem; }
+  footer { color: var(--muted); font-size: .875rem; border-top: 1px solid var(--line); }
   footer .cols { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem; padding-top: 3rem; padding-bottom: 2rem; }
-  footer .marca { font-family: 'Instrument Serif', serif; font-size: 1.75rem; color: var(--fg); line-height: 1; }
+  footer .marca { font-size: 1.75rem; }
   footer p { margin: .5rem 0 0; max-width: 24rem; }
   footer h4 { font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; color: var(--fg); margin: 0 0 .75rem; font-weight: 600; }
   footer .links { display: flex; flex-direction: column; gap: .4rem; }
@@ -79,19 +95,17 @@
 </style>
 </head>
 <body>
-<div class="wrap hero">
-  <h1>Tech<em>Dictionary</em></h1>
-  <p>Documentación oficial, bibliotecas de componentes y herramientas útiles, ordenadas por tecnología y en un solo sitio.</p>
-</div>
-<div class="wrap layout">
-  <aside>
-    <input id="q" type="search" placeholder="Buscar en todo…  ( / )" aria-label="Buscar">
-    <nav id="tabs" aria-label="Categorías"></nav>
-    <h3>Filtrar</h3>
-    <div class="tags" id="etiquetas" aria-label="Filtrar por etiqueta"></div>
-  </aside>
-  <main id="main" aria-live="polite">Cargando…</main>
-</div>
+<header>
+  <div class="wrap bar">
+    <a class="marca" href="./" id="inicio">Tech<em>Dictionary</em></a>
+    <details id="menu">
+      <summary id="menu-label">Categorías</summary>
+      <nav class="panel" id="tabs" aria-label="Categorías"></nav>
+    </details>
+    <input id="q" type="search" placeholder="Buscar…  ( / )" aria-label="Buscar en todos los enlaces">
+  </div>
+</header>
+<main id="main" class="wrap" aria-live="polite">Cargando…</main>
 <footer>
   <div class="wrap cols">
     <div>
@@ -116,26 +130,32 @@
 <script>
   const $ = s => document.querySelector(s);
   const el = (tag, props, ...kids) => { const e = Object.assign(document.createElement(tag), props); e.append(...kids); return e; };
-  let data, tag = null;
+  const menu = $('#menu');
+  let data, todos, grupos, etiquetas, tag = null;
 
   async function load() {
     try {
       const r = await fetch('data.json', { cache: 'no-cache' });
       if (!r.ok) throw new Error('HTTP ' + r.status);
       data = await r.json();
-      const grupos = {};
+      grupos = {};
       for (const c of data.categorias) (grupos[c.grupo] ||= []).push(c);
-      $('#tabs').replaceChildren(...Object.entries(grupos).flatMap(([g, cs]) =>
-        [el('h3', { textContent: g }), ...cs.map(c => el('a', { href: '#' + c.id, textContent: c.nombre }))]));
-      const todos = data.categorias.flatMap(c => c.secciones.flatMap(s => s.enlaces));
-      const tags = [...new Set(todos.flatMap(l => l.tags || []))].sort();
-      $('#etiquetas').replaceChildren(...tags.map(t => el('button', { type: 'button', textContent: t,
-        onclick() { tag = tag === t ? null : t; render(); } })));
+      todos = data.categorias.flatMap(c => c.secciones.flatMap(s => s.enlaces));
+      etiquetas = [...new Set(todos.flatMap(l => l.tags || []))].sort();
+      $('#tabs').replaceChildren(...Object.entries(grupos).map(([g, cs]) => el('div', {},
+        el('h4', { textContent: g }), ...cs.map(c => el('a', { href: '#' + c.id, textContent: c.nombre })))));
       $('#pie').textContent = `${todos.length} enlaces · actualizado ${data.actualizado}`;
       render();
     } catch (e) {
       $('#main').textContent = 'No se pudo cargar data.json (' + e.message + ').';
     }
+  }
+
+  const contar = c => c.secciones.reduce((n, s) => n + s.enlaces.length, 0);
+
+  function filtros() {
+    return el('div', { className: 'tags', ariaLabel: 'Filtrar por etiqueta' }, ...etiquetas.map(t => el('button', {
+      type: 'button', textContent: t, ariaPressed: t === tag, onclick() { tag = tag === t ? null : t; render(); } })));
   }
 
   function tarjeta(l) {
@@ -144,33 +164,72 @@
     const icono = el('img', { src: `https://icons.duckduckgo.com/ip3/${dominio}.ico`, alt: '', loading: 'lazy', onerror() { this.remove(); } });
     return el('li', {},
       el('div', { className: 'head' }, icono,
-        el('a', { href: l.url, target: '_blank', rel: 'noopener', textContent: l.nombre }),
-        el('span', { className: 'dom', textContent: dominio })),
+        el('a', { href: l.url, target: '_blank', rel: 'noopener', textContent: l.nombre })),
       el('p', { textContent: l.desc }),
-      ...(l.tags ? [el('div', { className: 'chips' }, ...l.tags.map(t => el('span', { textContent: t })))] : []));
+      el('div', { className: 'pie' }, el('span', { className: 'dom', textContent: dominio }),
+        ...(l.tags || []).map(t => el('span', { textContent: t }))));
+  }
+
+  function inicio() {
+    return [
+      el('section', { className: 'hero' },
+        el('h1', {}, 'Tech', el('em', { textContent: 'Dictionary' })),
+        el('p', { className: 'lead', textContent: 'La información útil sobre cada tecnología suele estar repartida entre docs, hilos de Twitter y listas de GitHub. Aquí está junta: documentación oficial, bibliotecas de componentes y herramientas, ordenadas por tecnología.' }),
+        el('p', { textContent: 'Cada recurso se revisa antes de entrar: enlace a la fuente real, gratis o con un plan gratis útil, y nada de propaganda. Elige una categoría, busca con / o filtra por etiqueta.' }),
+        el('div', { className: 'stats' },
+          el('div', {}, el('b', { textContent: todos.length }), el('span', { textContent: 'enlaces' })),
+          el('div', {}, el('b', { textContent: data.categorias.length }), el('span', { textContent: 'categorías' })),
+          el('div', {}, el('b', { textContent: etiquetas.length }), el('span', { textContent: 'etiquetas' })))),
+      el('h3', { textContent: 'Categorías' }),
+      ...Object.entries(grupos).flatMap(([g, cs]) => [
+        el('div', { className: 'grupo', textContent: g }),
+        el('ul', {}, ...cs.map(c => el('li', {},
+          el('div', { className: 'head' },
+            el('a', { href: '#' + c.id, textContent: c.nombre }),
+            el('span', { className: 'dom', textContent: contar(c) + ' enlaces' })),
+          el('p', { textContent: c.desc }))))]),
+      el('h3', { textContent: 'Explorar por etiqueta' }),
+      filtros()];
+  }
+
+  function secciones(cats, q, conCategoria) {
+    const out = [];
+    for (const c of cats) for (const s of c.secciones) {
+      const enlaces = s.enlaces.filter(l => (!q || (l.nombre + ' ' + l.desc).toLowerCase().includes(q)) && (!tag || l.tags?.includes(tag)));
+      if (enlaces.length) out.push(el('section', {},
+        el('h3', {}, s.nombre, el('small', { textContent: conCategoria ? c.nombre : enlaces.length })),
+        el('ul', {}, ...enlaces.map(tarjeta))));
+    }
+    return out.length ? out : [el('p', { textContent: 'Sin resultados.' })];
   }
 
   function render() {
     const q = $('#q').value.trim().toLowerCase();
-    const global = q || tag; // buscando o filtrando: se mira en todas las categorías
-    const actual = data.categorias.find(c => '#' + c.id === location.hash) || data.categorias[0];
-    document.querySelectorAll('#tabs a').forEach(a => a.ariaCurrent = !global && a.hash === '#' + actual.id ? 'page' : null);
-    document.querySelectorAll('#etiquetas button').forEach(b => b.ariaPressed = b.textContent === tag);
-    const out = [el('div', { className: 'cat' },
-      el('h2', { textContent: global ? 'Resultados' : actual.nombre }),
-      el('p', { textContent: global ? [q && `«${q}»`, tag && `etiqueta ${tag}`].filter(Boolean).join(' · ') : actual.desc || '' }))];
-    for (const c of global ? data.categorias : [actual]) for (const s of c.secciones) {
-      const enlaces = s.enlaces.filter(l => (!q || (l.nombre + ' ' + l.desc).toLowerCase().includes(q)) && (!tag || l.tags?.includes(tag)));
-      if (enlaces.length) out.push(el('section', {},
-        el('h3', {}, s.nombre, el('small', { textContent: global ? c.nombre : enlaces.length })),
-        el('ul', {}, ...enlaces.map(tarjeta))));
-    }
-    if (out.length === 1) out.push(el('p', { textContent: 'Sin resultados.' }));
-    $('#main').replaceChildren(...out);
+    const actual = data.categorias.find(c => '#' + c.id === location.hash);
+    document.querySelectorAll('#tabs a').forEach(a => a.ariaCurrent = actual && a.hash === '#' + actual.id ? 'page' : null);
+    $('#menu-label').textContent = actual ? actual.nombre : 'Categorías';
+    let vista;
+    if (q || tag) vista = [el('div', { className: 'cat' },
+        el('h2', { textContent: 'Resultados' }),
+        el('p', { textContent: [q && `«${q}»`, tag && `etiqueta ${tag}`].filter(Boolean).join(' · ') }), filtros()),
+      ...secciones(data.categorias, q, true)];
+    else if (actual) vista = [el('div', { className: 'cat' },
+        el('h2', { textContent: actual.nombre }), el('p', { textContent: actual.desc }), filtros()),
+      ...secciones([actual], '', false)];
+    else vista = inicio();
+    $('#main').replaceChildren(...vista);
   }
 
-  addEventListener('hashchange', () => { $('#q').value = ''; tag = null; render(); const top = $('.layout').offsetTop - 16; if (scrollY > top) scrollTo({ top }); });
-  addEventListener('keydown', e => { if (e.key === '/' && document.activeElement !== $('#q')) { e.preventDefault(); $('#q').focus(); } });
+  addEventListener('hashchange', () => { menu.open = false; $('#q').value = ''; tag = null; render(); scrollTo(0, 0); });
+  $('#inicio').addEventListener('click', e => {
+    e.preventDefault(); history.pushState(null, '', location.pathname);
+    menu.open = false; $('#q').value = ''; tag = null; render(); scrollTo(0, 0);
+  });
+  document.addEventListener('click', e => { if (menu.open && !menu.contains(e.target)) menu.open = false; });
+  addEventListener('keydown', e => {
+    if (e.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
+    if (e.key === '/' && document.activeElement !== $('#q')) { e.preventDefault(); $('#q').focus(); }
+  });
   $('#q').addEventListener('input', render);
   load();
 </script>
