@@ -34,6 +34,22 @@
               "tags": [
                 "oficial"
               ]
+            },
+            {
+              "nombre": "Guía de tipos",
+              "url": "https://typing.python.org/",
+              "desc": "Documentación oficial de las anotaciones de tipo.",
+              "tags": [
+                "oficial"
+              ]
+            },
+            {
+              "nombre": "PEP 8",
+              "url": "https://peps.python.org/pep-0008/",
+              "desc": "La guía de estilo oficial de Python.",
+              "tags": [
+                "oficial"
+              ]
             }
           ]
         },
@@ -69,6 +85,30 @@
               "nombre": "Litestar",
               "url": "https://litestar.dev/",
               "desc": "Framework ASGI rápido y tipado, alternativa a FastAPI con más piezas incluidas.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Django REST framework",
+              "url": "https://www.django-rest-framework.org/",
+              "desc": "APIs REST sobre Django con serialización y permisos.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Django Ninja",
+              "url": "https://django-ninja.dev/",
+              "desc": "APIs rápidas estilo FastAPI dentro de Django.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "FastHTML",
+              "url": "https://fastht.ml/",
+              "desc": "Webs interactivas en Python puro con htmx, sin JavaScript.",
               "tags": [
                 "open source"
               ]
@@ -114,6 +154,31 @@
               "nombre": "Textual",
               "url": "https://textual.textualize.io/",
               "desc": "Interfaces ricas para la terminal (TUI).",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Flet",
+              "url": "https://flet.dev/",
+              "desc": "Apps de escritorio, web y móvil en Python con controles de Flutter.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Qt for Python (PySide6)",
+              "url": "https://doc.qt.io/qtforpython-6/",
+              "desc": "Apps de escritorio nativas con Qt, licencia LGPL.",
+              "tags": [
+                "oficial",
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Pygame",
+              "url": "https://www.pygame.org/",
+              "desc": "Videojuegos 2D sencillos; ideal para aprender.",
               "tags": [
                 "open source"
               ]
@@ -170,6 +235,22 @@
               "tags": [
                 "open source"
               ]
+            },
+            {
+              "nombre": "Seaborn",
+              "url": "https://seaborn.pydata.org/",
+              "desc": "Gráficas estadísticas bonitas sobre Matplotlib con muy poco código.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Plotly",
+              "url": "https://plotly.com/python/",
+              "desc": "Gráficas interactivas para notebooks y webs.",
+              "tags": [
+                "open source"
+              ]
             }
           ]
         },
@@ -196,6 +277,59 @@
               "nombre": "Transformers",
               "url": "https://huggingface.co/docs/transformers",
               "desc": "Miles de modelos preentrenados de texto, visión y audio.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Scraping, imagen y automatización",
+          "enlaces": [
+            {
+              "nombre": "Requests",
+              "url": "https://requests.readthedocs.io/",
+              "desc": "El cliente HTTP clásico y más sencillo.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Beautiful Soup",
+              "url": "https://www.crummy.com/software/BeautifulSoup/bs4/doc/",
+              "desc": "Extrae datos de HTML aunque esté mal formado.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Scrapy",
+              "url": "https://scrapy.org/",
+              "desc": "Framework para rastrear y extraer datos de webs a escala.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Playwright para Python",
+              "url": "https://playwright.dev/python/",
+              "desc": "Automatiza navegadores reales: tests y páginas con JavaScript.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Pillow",
+              "url": "https://pillow.readthedocs.io/",
+              "desc": "Abrir, convertir, recortar y editar imágenes.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "OpenCV",
+              "url": "https://opencv.org/",
+              "desc": "Visión por computador: cámaras, detección y procesado de imagen.",
               "tags": [
                 "open source"
               ]
@@ -260,6 +394,38 @@
               "tags": [
                 "open source"
               ]
+            },
+            {
+              "nombre": "Click",
+              "url": "https://click.palletsprojects.com/",
+              "desc": "CLIs con decoradores; la base de Typer.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "structlog",
+              "url": "https://www.structlog.org/",
+              "desc": "Logs estructurados en JSON, listos para producción.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "python-dotenv",
+              "url": "https://github.com/theskumar/python-dotenv",
+              "desc": "Carga variables de entorno desde un .env.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Celery",
+              "url": "https://docs.celeryq.dev/",
+              "desc": "Tareas en segundo plano y programadas con colas.",
+              "tags": [
+                "open source"
+              ]
             }
           ]
         },
@@ -302,6 +468,61 @@
               "nombre": "Hypothesis",
               "url": "https://hypothesis.readthedocs.io/",
               "desc": "Tests basados en propiedades: genera casos que rompen tu código.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "mypy",
+              "url": "https://mypy-lang.org/",
+              "desc": "El comprobador de tipos de referencia.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "pre-commit",
+              "url": "https://pre-commit.com/",
+              "desc": "Ejecuta linters y formateadores antes de cada commit.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "coverage.py",
+              "url": "https://coverage.readthedocs.io/",
+              "desc": "Mide qué líneas cubren tus tests.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Aprender",
+          "enlaces": [
+            {
+              "nombre": "Real Python",
+              "url": "https://realpython.com/",
+              "desc": "Tutoriales a fondo de casi cualquier tema de Python; muchos gratis.",
+              "tags": [
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "Python Tutor",
+              "url": "https://pythontutor.com/",
+              "desc": "Visualiza paso a paso cómo se ejecuta tu código."
+            },
+            {
+              "nombre": "Automate the Boring Stuff",
+              "url": "https://automatetheboringstuff.com/",
+              "desc": "Libro gratuito para automatizar tareas del día a día."
+            },
+            {
+              "nombre": "awesome-python",
+              "url": "https://github.com/vinta/awesome-python",
+              "desc": "Lista curada enorme de bibliotecas por tema.",
               "tags": [
                 "open source"
               ]
@@ -910,6 +1131,14 @@
               "tags": [
                 "open source"
               ]
+            },
+            {
+              "nombre": "Knip",
+              "url": "https://knip.dev/",
+              "desc": "Encuentra archivos, exports y dependencias que ya no se usan.",
+              "tags": [
+                "open source"
+              ]
             }
           ]
         }
@@ -1121,6 +1350,27 @@
           ]
         },
         {
+          "nombre": "Estilos con Tailwind",
+          "enlaces": [
+            {
+              "nombre": "CVA",
+              "url": "https://cva.style/",
+              "desc": "Variantes de componentes tipadas (la base de shadcn/ui).",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "tailwind-merge",
+              "url": "https://github.com/dcastil/tailwind-merge",
+              "desc": "Combina clases de Tailwind sin conflictos.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
           "nombre": "Datos y estado",
           "enlaces": [
             {
@@ -1162,6 +1412,39 @@
               "desc": "Estado atómico, alternativa ligera a Context.",
               "tags": [
                 "open source"
+              ]
+            },
+            {
+              "nombre": "TanStack Form",
+              "url": "https://tanstack.com/form",
+              "desc": "Formularios tipados de principio a fin.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Redux Toolkit",
+              "url": "https://redux-toolkit.js.org/",
+              "desc": "La forma moderna de usar Redux, con RTK Query para datos.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "nuqs",
+              "url": "https://nuqs.dev/",
+              "desc": "Estado en la URL (query params) como si fuera useState.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "TanStack Virtual",
+              "url": "https://tanstack.com/virtual",
+              "desc": "Listas y tablas virtualizadas con miles de filas.",
+              "tags": [
+                "open source",
+                "sin estilos"
               ]
             }
           ]
@@ -1249,6 +1532,131 @@
           ]
         },
         {
+          "nombre": "Gráficas",
+          "enlaces": [
+            {
+              "nombre": "Nivo",
+              "url": "https://nivo.rocks/",
+              "desc": "Gráficas bonitas basadas en D3, con muchos tipos.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "visx",
+              "url": "https://airbnb.io/visx/",
+              "desc": "Primitivas de visualización de Airbnb para gráficas a medida.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Tremor",
+              "url": "https://www.tremor.so/",
+              "desc": "Componentes de dashboard y gráficas con Tailwind.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Editores, diagramas y documentos",
+          "enlaces": [
+            {
+              "nombre": "React Flow",
+              "url": "https://reactflow.dev/",
+              "desc": "Diagramas de nodos y editores visuales.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Tiptap",
+              "url": "https://tiptap.dev/",
+              "desc": "Editor de texto enriquecido; el núcleo es libre, la colaboración es de pago.",
+              "tags": [
+                "open source",
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "Lexical",
+              "url": "https://lexical.dev/",
+              "desc": "Framework de editores de texto de Meta.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "react-pdf",
+              "url": "https://react-pdf.org/",
+              "desc": "Genera PDFs con componentes de React.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Auth e idiomas",
+          "enlaces": [
+            {
+              "nombre": "Auth.js",
+              "url": "https://authjs.dev/",
+              "desc": "Autenticación con OAuth, email y credenciales para Next.js y más.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Clerk",
+              "url": "https://clerk.com/",
+              "desc": "Autenticación con componentes listos; plan gratis generoso.",
+              "tags": [
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "react-i18next",
+              "url": "https://react.i18next.com/",
+              "desc": "Traducciones e idiomas en React.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Móvil (React Native)",
+          "enlaces": [
+            {
+              "nombre": "Expo Router",
+              "url": "https://docs.expo.dev/router/introduction/",
+              "desc": "Rutas por archivos para apps de React Native.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "NativeWind",
+              "url": "https://www.nativewind.dev/",
+              "desc": "Tailwind en React Native.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Tamagui",
+              "url": "https://tamagui.dev/",
+              "desc": "Componentes y estilos compartidos entre web y móvil.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
           "nombre": "Herramientas",
           "enlaces": [
             {
@@ -1271,6 +1679,48 @@
               "nombre": "React Testing Library",
               "url": "https://testing-library.com/docs/react-testing-library/intro/",
               "desc": "Tests que usan los componentes como lo haría un usuario.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "MSW",
+              "url": "https://mswjs.io/",
+              "desc": "Simula APIs en tests y desarrollo interceptando las peticiones.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Aprender",
+          "enlaces": [
+            {
+              "nombre": "patterns.dev",
+              "url": "https://www.patterns.dev/",
+              "desc": "Patrones de diseño, renderizado y rendimiento en React, gratis."
+            },
+            {
+              "nombre": "Bulletproof React",
+              "url": "https://github.com/alan2207/bulletproof-react",
+              "desc": "Arquitectura de referencia para apps React grandes.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "React TypeScript Cheatsheet",
+              "url": "https://react-typescript-cheatsheet.netlify.app/",
+              "desc": "Cómo tipar props, hooks y eventos.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "awesome-react",
+              "url": "https://github.com/enaqx/awesome-react",
+              "desc": "Lista curada del ecosistema React.",
               "tags": [
                 "open source"
               ]
@@ -2649,13 +3099,312 @@
           ]
         },
         {
-          "nombre": "Skills y plugins",
+          "nombre": "Automatización",
           "enlaces": [
+            {
+              "nombre": "n8n",
+              "url": "https://n8n.io/",
+              "desc": "Flujos de automatización visuales con IA; gratis autoalojado para uso propio.",
+              "tags": [
+                "source-available"
+              ]
+            },
+            {
+              "nombre": "Activepieces",
+              "url": "https://www.activepieces.com/",
+              "desc": "Alternativa a n8n y Zapier con licencia MIT.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "grupo": "Herramientas",
+      "nombre": "Skills para Claude Code",
+      "desc": "Skills y plugins probados en la plantilla harness-sdd-template. Una skill son instrucciones que el agente sigue con tus permisos: léela antes de instalarla.",
+      "secciones": [
+        {
+          "nombre": "Dónde encontrarlas",
+          "enlaces": [
+            {
+              "nombre": "anthropics/skills",
+              "url": "https://github.com/anthropics/skills",
+              "desc": "Skills oficiales de Anthropic: documentos (docx, pdf, xlsx), skill-creator y ejemplos.",
+              "tags": [
+                "oficial",
+                "open source"
+              ]
+            },
             {
               "nombre": "skills.sh",
               "url": "https://skills.sh/",
               "desc": "Directorio de skills para agentes de programación."
             },
+            {
+              "nombre": "Trail of Bits",
+              "url": "https://github.com/trailofbits/skills",
+              "desc": "Colección de seguridad y pruebas de una de las firmas de auditoría más conocidas. CC BY-SA 4.0.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Vercel agent-skills",
+              "url": "https://github.com/vercel-labs/agent-skills",
+              "desc": "Buenas prácticas de React y Next.js del equipo de Vercel.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Emil Kowalski",
+              "url": "https://github.com/emilkowalski/skills",
+              "desc": "Skills de diseño de interfaz y animación del autor de Sonner y Vaul: emil-design-eng, review-animations, break-ui, pick-ui-library.",
+              "tags": [
+                "open source",
+                "animación"
+              ]
+            },
+            {
+              "nombre": "ECC",
+              "url": "https://github.com/affaan-m/ECC",
+              "desc": "Everything Claude Code: colección enorme de skills, agentes y hooks. Escoge piezas sueltas, no la instales entera.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Diseño e interfaz",
+          "enlaces": [
+            {
+              "nombre": "web-design-guidelines",
+              "url": "https://github.com/vercel-labs/web-interface-guidelines",
+              "desc": "Lista objetiva de Vercel para revisar interfaces. En las pruebas, el revisor encontró fallos reales con ella.",
+              "tags": [
+                "open source",
+                "accesible"
+              ]
+            },
+            {
+              "nombre": "ui-ux-pro-max",
+              "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+              "desc": "Catálogo local de paletas, parejas de fuentes, estilos y guías de UX por stack.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "redesign-existing-projects",
+              "url": "https://github.com/Leonxlnx/taste-skill",
+              "desc": "Audita un diseño existente, detecta el aspecto genérico de IA y lo lleva a un nivel más cuidado.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "make-interfaces-feel-better",
+              "url": "https://github.com/affaan-m/ECC/tree/main/skills/make-interfaces-feel-better",
+              "desc": "Detalles concretos de espaciado, tipografía, sombras, estados y áreas de clic.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "frontend-design-direction",
+              "url": "https://github.com/affaan-m/ECC/tree/main/skills/frontend-design-direction",
+              "desc": "Fija una dirección visual propia del producto antes de construir la interfaz.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Calidad, pruebas y decisiones",
+          "enlaces": [
+            {
+              "nombre": "property-based-testing",
+              "url": "https://github.com/trailofbits/skills/tree/main/plugins/property-based-testing",
+              "desc": "Tests basados en propiedades con Hypothesis, fast-check o proptest. El revisor la usó para juzgar casos borde.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "ponytail",
+              "url": "https://github.com/DietrichGebert/ponytail",
+              "desc": "Plugin contra la sobreingeniería: la solución más simple que funciona, más revisión y auditoría de lo que sobra.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "spec-to-code-compliance",
+              "url": "https://github.com/trailofbits/skills/tree/main/plugins/spec-to-code-compliance",
+              "desc": "Compara el código con su especificación: qué se cumple, qué falta y qué sobra.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "grill-me",
+              "url": "https://github.com/mattpocock/skills",
+              "desc": "De Matt Pocock: te interroga sobre un plan hasta que no quedan huecos. Base de la entrevista de la plantilla.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "architecture-decision-records",
+              "url": "https://github.com/affaan-m/ECC/tree/main/skills/architecture-decision-records",
+              "desc": "Guarda cada decisión de arquitectura como un ADR numerado con alternativas y consecuencias.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "council",
+              "url": "https://github.com/affaan-m/ECC/tree/main/skills/council",
+              "desc": "Cuatro voces que discuten una decisión ambigua antes de elegir.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Plugin Engineering",
+              "url": "https://github.com/anthropics/knowledge-work-plugins",
+              "desc": "Plugin de Anthropic con tech-debt, deploy-checklist, architecture, system-design y debug.",
+              "tags": [
+                "oficial",
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Seguridad",
+          "enlaces": [
+            {
+              "nombre": "differential-review",
+              "url": "https://github.com/trailofbits/skills/tree/main/plugins/differential-review",
+              "desc": "Revisión de seguridad de un diff: radio de impacto, cobertura y regresiones.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "supply-chain-risk-auditor",
+              "url": "https://github.com/trailofbits/skills/tree/main/plugins/supply-chain-risk-auditor",
+              "desc": "Audita dependencias: avisos de seguridad, proyectos abandonados y scripts de instalación.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "variant-analysis",
+              "url": "https://github.com/trailofbits/skills/tree/main/plugins/variant-analysis",
+              "desc": "Encontrado un fallo, busca sus variantes por todo el código.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "sharp-edges",
+              "url": "https://github.com/trailofbits/skills/tree/main/plugins/sharp-edges",
+              "desc": "Detecta APIs y configuraciones que facilitan cometer errores de seguridad.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "insecure-defaults",
+              "url": "https://github.com/trailofbits/skills/tree/main/plugins/insecure-defaults",
+              "desc": "Busca secretos por defecto, credenciales de ejemplo y opciones que fallan abiertas.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "fp-check",
+              "url": "https://github.com/trailofbits/skills/tree/main/plugins/fp-check",
+              "desc": "Verifica si un fallo de seguridad sospechado es real o un falso positivo.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "security-audit",
+              "url": "https://github.com/cloudflare/security-audit-skill",
+              "desc": "Auditoría completa de Cloudflare con muchos agentes; potente pero cara.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "prd-securability-enhancement",
+              "url": "https://github.com/OWASP/secure-agent-playbook",
+              "desc": "De OWASP: añade requisitos de seguridad (ASVS) a una especificación antes de programar.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "AgentShield",
+              "url": "https://github.com/affaan-m/agentshield",
+              "desc": "Escanea tu configuración de .claude/ en busca de riesgos. Fija una versión con más de 7 días.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Por stack",
+          "enlaces": [
+            {
+              "nombre": "vercel-react-best-practices",
+              "url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices",
+              "desc": "Rendimiento en React y Next.js: renders, bundle y carga de datos.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "vercel-composition-patterns",
+              "url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/composition-patterns",
+              "desc": "Componentes compuestos en vez de props booleanas que se multiplican.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "vercel-react-view-transitions",
+              "url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/react-view-transitions",
+              "desc": "Animaciones de página con la View Transition API de React.",
+              "tags": [
+                "open source",
+                "animación"
+              ]
+            },
+            {
+              "nombre": "modern-python",
+              "url": "https://github.com/trailofbits/skills/tree/main/plugins/modern-python",
+              "desc": "Proyectos Python con uv, ruff y ty desde el principio.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Otros plugins",
+          "enlaces": [
             {
               "nombre": "context-mode",
               "url": "https://github.com/mksglu/context-mode",
@@ -2676,27 +3425,6 @@
               "nombre": "Shannon",
               "url": "https://github.com/KeygraphHQ/shannon",
               "desc": "Pentester con IA para tus propias apps que solo informa lo que consigue explotar. La edición Lite es AGPL.",
-              "tags": [
-                "open source"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Automatización",
-          "enlaces": [
-            {
-              "nombre": "n8n",
-              "url": "https://n8n.io/",
-              "desc": "Flujos de automatización visuales con IA; gratis autoalojado para uso propio.",
-              "tags": [
-                "source-available"
-              ]
-            },
-            {
-              "nombre": "Activepieces",
-              "url": "https://www.activepieces.com/",
-              "desc": "Alternativa a n8n y Zapier con licencia MIT.",
               "tags": [
                 "open source"
               ]
