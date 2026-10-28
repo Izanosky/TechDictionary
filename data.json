@@ -3118,6 +3118,62 @@
               ]
             }
           ]
+        },
+        {
+          "nombre": "Estar al día (sin propaganda)",
+          "enlaces": [
+            {
+              "nombre": "Simon Willison",
+              "url": "https://simonwillison.net/",
+              "desc": "Prueba cada novedad y enseña lo que funciona y lo que no. El mejor filtro para desarrolladores."
+            },
+            {
+              "nombre": "Latent Space",
+              "url": "https://www.latent.space/",
+              "desc": "Newsletter y podcast para ingenieros de IA; incluye el resumen diario AI News.",
+              "tags": [
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "Interconnects",
+              "url": "https://www.interconnects.ai/",
+              "desc": "Nathan Lambert: modelos abiertos, post-training y razonamiento, con rigor técnico.",
+              "tags": [
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "Import AI",
+              "url": "https://jack-clark.net/",
+              "desc": "Resumen semanal de investigación y política de Jack Clark (cofundador de Anthropic)."
+            },
+            {
+              "nombre": "METR",
+              "url": "https://metr.org/",
+              "desc": "Mide cuánto tiempo de trabajo humano pueden hacer los agentes y su efecto real en la productividad."
+            },
+            {
+              "nombre": "Epoch AI",
+              "url": "https://epoch.ai/",
+              "desc": "Datos y tendencias de modelos: cómputo, coste y benchmarks."
+            },
+            {
+              "nombre": "Artificial Analysis",
+              "url": "https://artificialanalysis.ai/",
+              "desc": "Compara modelos por calidad, precio y velocidad con sus propias pruebas."
+            },
+            {
+              "nombre": "SWE-rebench",
+              "url": "https://swe-rebench.com/",
+              "desc": "Ranking de agentes de código con tareas nuevas cada mes, para evitar la contaminación de SWE-bench."
+            },
+            {
+              "nombre": "LMArena",
+              "url": "https://lmarena.ai/",
+              "desc": "Ranking por votos de usuarios. Úsalo con cuidado: premia el estilo y los laboratorios pueden probar variantes en privado."
+            }
+          ]
         }
       ]
     },
