@@ -1528,6 +1528,15 @@
                 "open source",
                 "animación"
               ]
+            },
+            {
+              "nombre": "AnimateIcons",
+              "url": "https://github.com/Avijit07x/animateicons",
+              "desc": "Iconos animados al pasar el ratón, hechos con Motion. Revisa la licencia en el repo.",
+              "tags": [
+                "open source",
+                "animación"
+              ]
             }
           ]
         },
@@ -3095,6 +3104,11 @@
               "tags": [
                 "open source"
               ]
+            },
+            {
+              "nombre": "Cómo ser más ambicioso con los modelos",
+              "url": "https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/",
+              "desc": "Felix Rieseberg (Claude): pedir el resultado de fondo, hacerlo como un experto y verificarlo fuera del modelo."
             }
           ]
         },
@@ -3120,58 +3134,36 @@
           ]
         },
         {
-          "nombre": "Estar al día (sin propaganda)",
+          "nombre": "Documentos para IA (PDF a Markdown)",
           "enlaces": [
             {
-              "nombre": "Simon Willison",
-              "url": "https://simonwillison.net/",
-              "desc": "Prueba cada novedad y enseña lo que funciona y lo que no. El mejor filtro para desarrolladores."
-            },
-            {
-              "nombre": "Latent Space",
-              "url": "https://www.latent.space/",
-              "desc": "Newsletter y podcast para ingenieros de IA; incluye el resumen diario AI News.",
+              "nombre": "MarkItDown",
+              "url": "https://github.com/microsoft/markitdown",
+              "desc": "De Microsoft: convierte PDF, Office, HTML e imágenes a Markdown. Ligero, sin GPU.",
               "tags": [
-                "freemium"
+                "open source"
               ]
             },
             {
-              "nombre": "Interconnects",
-              "url": "https://www.interconnects.ai/",
-              "desc": "Nathan Lambert: modelos abiertos, post-training y razonamiento, con rigor técnico.",
+              "nombre": "Docling",
+              "url": "https://github.com/docling-project/docling",
+              "desc": "De IBM: PDFs con tablas y estructura a Markdown o JSON, en local.",
               "tags": [
-                "freemium"
+                "open source"
               ]
             },
             {
-              "nombre": "Import AI",
-              "url": "https://jack-clark.net/",
-              "desc": "Resumen semanal de investigación y política de Jack Clark (cofundador de Anthropic)."
+              "nombre": "MinerU",
+              "url": "https://github.com/opendatalab/MinerU",
+              "desc": "PDF escaneados, tablas y fórmulas a Markdown/JSON con OCR. Desde la 3.1 usa una licencia propia basada en Apache 2.0 (antes AGPL).",
+              "tags": [
+                "open source"
+              ]
             },
             {
-              "nombre": "METR",
-              "url": "https://metr.org/",
-              "desc": "Mide cuánto tiempo de trabajo humano pueden hacer los agentes y su efecto real en la productividad."
-            },
-            {
-              "nombre": "Epoch AI",
-              "url": "https://epoch.ai/",
-              "desc": "Datos y tendencias de modelos: cómputo, coste y benchmarks."
-            },
-            {
-              "nombre": "Artificial Analysis",
-              "url": "https://artificialanalysis.ai/",
-              "desc": "Compara modelos por calidad, precio y velocidad con sus propias pruebas."
-            },
-            {
-              "nombre": "SWE-rebench",
-              "url": "https://swe-rebench.com/",
-              "desc": "Ranking de agentes de código con tareas nuevas cada mes, para evitar la contaminación de SWE-bench."
-            },
-            {
-              "nombre": "LMArena",
-              "url": "https://lmarena.ai/",
-              "desc": "Ranking por votos de usuarios. Úsalo con cuidado: premia el estilo y los laboratorios pueden probar variantes en privado."
+              "nombre": "OXR",
+              "url": "https://github.com/SoMarkAI/OXR",
+              "desc": "Modelo de 1,3B (oct. 2026) que parsea documentos con coordenadas de cada elemento. Sus benchmarks son propios y necesita GPU de 24 GB; pruébalo solo si los anteriores se quedan cortos."
             }
           ]
         }
@@ -3299,6 +3291,14 @@
               "nombre": "claude-mem",
               "url": "https://github.com/thedotmack/claude-mem",
               "desc": "Memoria entre sesiones guardada en local (SQLite). Ojo: lo que guarda lo resume un modelo, y su licencia no está clara (AGPL o Apache según la fuente)."
+            },
+            {
+              "nombre": "obsidian-skills",
+              "url": "https://github.com/kepano/obsidian-skills",
+              "desc": "Del creador de Obsidian: enseña al agente su CLI, Markdown, Bases y JSON Canvas.",
+              "tags": [
+                "open source"
+              ]
             }
           ]
         },
@@ -3686,6 +3686,119 @@
       ]
     },
     {
+      "id": "al-dia",
+      "grupo": "Recursos",
+      "nombre": "Estar al día",
+      "desc": "Pocas fuentes y buenas en vez del timeline. Antes de creerte una novedad: ¿hay repo o artículo?, ¿las cifras son solo del autor?, ¿el \"gratis\" es real?, ¿resuelve un problema que ya tengas?",
+      "secciones": [
+        {
+          "nombre": "Leer cada semana",
+          "enlaces": [
+            {
+              "nombre": "Simon Willison",
+              "url": "https://simonwillison.net/",
+              "desc": "Prueba cada novedad y enseña lo que funciona y lo que no. El mejor filtro para desarrolladores."
+            },
+            {
+              "nombre": "Latent Space",
+              "url": "https://www.latent.space/",
+              "desc": "Newsletter y podcast para ingenieros de IA; incluye el resumen diario AI News.",
+              "tags": [
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "Interconnects",
+              "url": "https://www.interconnects.ai/",
+              "desc": "Nathan Lambert: modelos abiertos, post-training y razonamiento, con rigor técnico.",
+              "tags": [
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "Import AI",
+              "url": "https://jack-clark.net/",
+              "desc": "Resumen semanal de investigación y política de Jack Clark (cofundador de Anthropic)."
+            },
+            {
+              "nombre": "One Useful Thing",
+              "url": "https://www.oneusefulthing.org/",
+              "desc": "Ethan Mollick: cómo usar la IA en el trabajo real, con experimentos.",
+              "tags": [
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "Ahead of AI",
+              "url": "https://magazine.sebastianraschka.com/",
+              "desc": "Sebastian Raschka explica cómo funcionan los LLM por dentro.",
+              "tags": [
+                "freemium"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Comparar modelos con datos",
+          "enlaces": [
+            {
+              "nombre": "Artificial Analysis",
+              "url": "https://artificialanalysis.ai/",
+              "desc": "Compara modelos por calidad, precio y velocidad con sus propias pruebas."
+            },
+            {
+              "nombre": "SWE-rebench",
+              "url": "https://swe-rebench.com/",
+              "desc": "Ranking de agentes de código con tareas nuevas cada mes, para evitar la contaminación de SWE-bench."
+            },
+            {
+              "nombre": "METR",
+              "url": "https://metr.org/",
+              "desc": "Mide cuánto tiempo de trabajo humano pueden hacer los agentes y su efecto real en la productividad."
+            },
+            {
+              "nombre": "Epoch AI",
+              "url": "https://epoch.ai/",
+              "desc": "Datos y tendencias de modelos: cómputo, coste y benchmarks."
+            },
+            {
+              "nombre": "LMArena",
+              "url": "https://lmarena.ai/",
+              "desc": "Ranking por votos de usuarios. Úsalo con cuidado: premia el estilo y los laboratorios pueden probar variantes en privado."
+            }
+          ]
+        },
+        {
+          "nombre": "Novedades de herramientas",
+          "enlaces": [
+            {
+              "nombre": "Best of JS",
+              "url": "https://bestofjs.org/",
+              "desc": "Los proyectos JavaScript que más crecen, filtrados y por categoría.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "JavaScript Rising Stars",
+              "url": "https://risingstars.js.org/",
+              "desc": "Resumen anual de los proyectos JS que más estrellas ganaron."
+            },
+            {
+              "nombre": "GitHub Trending",
+              "url": "https://github.com/trending",
+              "desc": "Repos que más crecen hoy; útil, pero lleno de modas pasajeras."
+            },
+            {
+              "nombre": "Hacker News",
+              "url": "https://news.ycombinator.com/",
+              "desc": "Noticias técnicas con comentarios muy críticos: buen antídoto contra el hype."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "diseno",
       "grupo": "Recursos",
       "nombre": "Diseño",
@@ -3753,6 +3866,16 @@
               "nombre": "Footer Design",
               "url": "https://footer.design/",
               "desc": "Galería de footers de webs reales."
+            },
+            {
+              "nombre": "Dark Design",
+              "url": "https://www.dark.design/",
+              "desc": "Galería de webs con tema oscuro."
+            },
+            {
+              "nombre": "Supahero",
+              "url": "https://supahero.io/",
+              "desc": "Biblioteca de secciones hero de webs reales. Gratis de consultar; vende posiciones destacadas."
             }
           ]
         },
