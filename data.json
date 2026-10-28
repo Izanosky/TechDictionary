@@ -301,7 +301,7 @@
         ]},
         { "nombre": "Runtimes alternativos", "enlaces": [
           { "nombre": "Bun", "url": "https://bun.sh/", "desc": "Runtime con bundler, tests y gestor de paquetes integrados.", "tags": ["open source"] },
-          { "nombre": "Deno", "url": "https://deno.com/", "desc": "Runtime seguro por defecto con TypeScript integrado.", "tags": ["open source"] }
+          { "nombre": "Deno", "url": "https://deno.com/", "desc": "Runtime seguro por defecto con TypeScript integrado. Ojo: Cloudflare lo compró en octubre de 2026 y solo recibirá parches hasta finales de 2027; no es buena idea para proyectos nuevos.", "tags": ["open source"] }
         ]},
         { "nombre": "Frameworks", "enlaces": [
           { "nombre": "Express", "url": "https://expressjs.com/", "desc": "El framework web clásico y minimalista.", "tags": ["open source"] },
