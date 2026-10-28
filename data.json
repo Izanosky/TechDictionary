@@ -3140,6 +3140,15 @@
               ]
             },
             {
+              "nombre": "Marketplace oficial de plugins",
+              "url": "https://github.com/anthropics/claude-plugins-official",
+              "desc": "Plugins de Anthropic y destacados: frontend-design, code-review, feature-dev, skill-creator, security-guidance, playwright, context7…",
+              "tags": [
+                "oficial",
+                "open source"
+              ]
+            },
+            {
               "nombre": "skills.sh",
               "url": "https://skills.sh/",
               "desc": "Directorio de skills para agentes de programación."
@@ -3176,6 +3185,64 @@
               "tags": [
                 "open source"
               ]
+            }
+          ]
+        },
+        {
+          "nombre": "Flujo de trabajo y contexto",
+          "enlaces": [
+            {
+              "nombre": "Superpowers",
+              "url": "https://github.com/obra/superpowers",
+              "desc": "Metodología completa en skills: lluvia de ideas, planes, TDD, depuración sistemática y verificar antes de dar por terminado. Solapa con feature-dev: elige uno.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "gstack",
+              "url": "https://github.com/garrytan/gstack",
+              "desc": "Skills de Garry Tan (YC) que dan roles a Claude: producto, jefe de ingeniería, diseño, QA y release. Coge solo los comandos que uses; las cifras de productividad de su autor están discutidas.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Patrones de trabajo de caveman",
+              "url": "https://github.com/JuliusBrussee/caveman/tree/main/skills",
+              "desc": "investigate-first, surgical-patch, verify-and-stop, lean-build, safe-refactor y migration: diagnosticar antes de tocar, arreglar en la capa justa, verificar sin ampliar alcance.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "caveman",
+              "url": "https://github.com/JuliusBrussee/caveman",
+              "desc": "Respuestas en estilo telegráfico para gastar menos tokens de salida. Promete un 65-75 %, pero en sesiones reales ronda el 25 % y hay dudas sobre si empeora el razonamiento.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "prompt-master",
+              "url": "https://github.com/nidhinjs/prompt-master",
+              "desc": "Escribe y mejora prompts adaptados a cada herramienta: LLMs, Cursor, generadores de imagen o vídeo.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Context7",
+              "url": "https://context7.com/",
+              "desc": "MCP que da al agente la documentación actual de cada librería y versión, en lugar de la que recuerda.",
+              "tags": [
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "claude-mem",
+              "url": "https://github.com/thedotmack/claude-mem",
+              "desc": "Memoria entre sesiones guardada en local (SQLite). Ojo: lo que guarda lo resume un modelo, y su licencia no está clara (AGPL o Apache según la fuente)."
             }
           ]
         },
