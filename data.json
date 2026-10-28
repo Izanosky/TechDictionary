@@ -1355,6 +1355,14 @@
                 "open source",
                 "animación"
               ]
+            },
+            {
+              "nombre": "Originkit",
+              "url": "https://originkit.dev/",
+              "desc": "Componentes animados para React y Framer, también vía MCP. Gratis; el código se descarga con una clave API gratuita.",
+              "tags": [
+                "animación"
+              ]
             }
           ]
         },
@@ -3279,6 +3287,16 @@
               "tags": [
                 "open source"
               ]
+            },
+            {
+              "nombre": "claude-obsidian",
+              "url": "https://github.com/AgriciDaniel/claude-obsidian",
+              "desc": "Segundo cerebro en Obsidian con el patrón LLM Wiki de Karpathy: sueltas fuentes y Claude las resume, enlaza y archiva en Markdown."
+            },
+            {
+              "nombre": "Repos LLM Wiki",
+              "url": "https://github.com/topics/karpathy-llm-wiki",
+              "desc": "Todas las variantes del patrón LLM Wiki de Karpathy para Obsidian y agentes."
             }
           ]
         },
@@ -3622,6 +3640,14 @@
               "desc": "Procesado de imagen por nodos: escalado, restauración, quitar fondo.",
               "tags": [
                 "open source"
+              ]
+            },
+            {
+              "nombre": "ASCII Magic",
+              "url": "https://ascii-magic.com/",
+              "desc": "Convierte imágenes y vídeo en ASCII, pixel art, halftone o dither; tiene MCP para agentes. Gratis 15 estilos; Pro desbloquea 100.",
+              "tags": [
+                "freemium"
               ]
             }
           ]
@@ -4076,6 +4102,14 @@
               "nombre": "Supahero",
               "url": "https://supahero.io/",
               "desc": "Biblioteca de secciones hero de webs reales. Gratis de consultar; vende posiciones destacadas."
+            },
+            {
+              "nombre": "Landdding",
+              "url": "https://landdding.com/",
+              "desc": "Unas 2.700 landings reales de Webflow, Framer y más, por categoría y color.",
+              "tags": [
+                "freemium"
+              ]
             }
           ]
         },
