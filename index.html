@@ -56,7 +56,15 @@
   li a::after { content: ''; position: absolute; inset: 0; border-radius: inherit; }
   li .dom { color: var(--muted); font-size: .75rem; margin-left: auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 45%; }
   li p { margin: .5rem 0 0; color: var(--muted); font-size: .9rem; }
-  footer { color: var(--muted); font-size: .85rem; padding: 2rem 0; border-top: 1px solid var(--line); }
+  footer { color: var(--muted); font-size: .875rem; border-top: 1px solid var(--line); margin-top: 2rem; }
+  footer .cols { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem; padding-top: 3rem; padding-bottom: 2rem; }
+  footer .marca { font-family: 'Instrument Serif', serif; font-size: 1.75rem; color: var(--fg); line-height: 1; }
+  footer .marca em { color: var(--accent); }
+  footer p { margin: .5rem 0 0; max-width: 24rem; }
+  footer nav { flex-direction: column; gap: .4rem; margin: 0; }
+  footer nav a { padding: 0; border-radius: 0; font-weight: 400; font-size: .875rem; }
+  footer h3 { font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; color: var(--fg); margin: 0 0 .75rem; font-weight: 600; }
+  footer .base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem; padding-top: 1.25rem; padding-bottom: 2rem; border-top: 1px solid var(--line); font-size: .8rem; }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 </head>
@@ -73,7 +81,27 @@
   <div class="wrap tags" id="etiquetas" aria-label="Filtrar por etiqueta"></div>
 </header>
 <main id="main" class="wrap" aria-live="polite">Cargando…</main>
-<footer class="wrap" id="pie"></footer>
+<footer>
+  <div class="wrap cols">
+    <div>
+      <div class="marca">Tech<em>Dictionary</em></div>
+      <p>Recursos revisados a mano: fuente real, gratis o con plan gratis útil, y sin propaganda.</p>
+    </div>
+    <div>
+      <h3>Proyecto</h3>
+      <nav aria-label="Proyecto">
+        <a href="https://github.com/Izanosky/TechDictionary" target="_blank" rel="noopener">Código en GitHub</a>
+        <a href="https://github.com/Izanosky/TechDictionary/issues/new?title=Sugerencia%3A%20" target="_blank" rel="noopener">Sugerir un recurso</a>
+        <a href="https://github.com/Izanosky/TechDictionary/issues" target="_blank" rel="noopener">Avisar de un enlace roto</a>
+        <a href="data.json" target="_blank">Datos en JSON</a>
+      </nav>
+    </div>
+  </div>
+  <div class="wrap base">
+    <span id="pie"></span>
+    <span>Hecho por <a href="https://github.com/Izanosky" target="_blank" rel="noopener" style="color: inherit">Izanosky</a></span>
+  </div>
+</footer>
 <script>
   const $ = s => document.querySelector(s);
   const el = (tag, props, ...kids) => { const e = Object.assign(document.createElement(tag), props); e.append(...kids); return e; };
