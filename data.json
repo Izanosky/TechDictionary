@@ -1363,6 +1363,16 @@
               "tags": [
                 "animación"
               ]
+            },
+            {
+              "nombre": "affectUI",
+              "url": "https://github.com/flohoeller/affectui",
+              "desc": "Componentes, ilustraciones y animaciones sobrias para productos de IA, un archivo cada uno, con la CLI de shadcn. Parte gratis (MIT); 132 piezas más en Pro de pago único.",
+              "tags": [
+                "open source",
+                "freemium",
+                "animación"
+              ]
             }
           ]
         },
@@ -4110,6 +4120,21 @@
               "tags": [
                 "freemium"
               ]
+            }
+          ]
+        },
+        {
+          "nombre": "Directorios de recursos",
+          "enlaces": [
+            {
+              "nombre": "DesignBookmark",
+              "url": "https://designbookmark.com/",
+              "desc": "Unos 2.600 recursos de diseño en 59 categorías; guarda favoritos con tu cuenta de Google."
+            },
+            {
+              "nombre": "bookmarks.design",
+              "url": "https://www.bookmarks.design/",
+              "desc": "Lista curada de recursos para diseñadores, por categoría."
             }
           ]
         },
