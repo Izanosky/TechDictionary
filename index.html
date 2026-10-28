@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TechDictionary</title>
+<meta name="description" content="Documentación, bibliotecas y herramientas útiles por tecnología, en un solo sitio.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f8f7f4; --fg: #1a1917; --muted: #6b6862; --card: #ffffffcc; --line: #e6e3dd; --accent: #c2410c; --glow: #fdba7440;
+    font-family: Inter, system-ui, sans-serif; line-height: 1.5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0e0d0c; --fg: #f3f1ed; --muted: #9c978f; --card: #1a1816cc; --line: #2a2724; --accent: #fb923c; --glow: #fb923c1a; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; color: var(--fg);
+    background: radial-gradient(60rem 30rem at 50% -10rem, var(--glow), transparent), var(--bg); }
+  .wrap { max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; }
+
+  .hero { padding: 4rem 0 2rem; }
+  h1 { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(2.5rem, 6vw, 4rem); line-height: 1; margin: 0; letter-spacing: -.02em; }
+  h1 em { color: var(--accent); }
+  .hero p { color: var(--muted); max-width: 36rem; margin: .75rem 0 0; }
+
+  header { position: sticky; top: 0; z-index: 1; backdrop-filter: blur(12px); background: color-mix(in srgb, var(--bg) 80%, transparent); border-bottom: 1px solid var(--line); }
+  .bar { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; padding: .75rem 0; }
+  nav { display: flex; flex-wrap: wrap; gap: .25rem; margin-right: auto; }
+  nav a { padding: .35rem .85rem; border-radius: 999px; color: var(--muted); text-decoration: none; font-size: .9rem; font-weight: 500; transition: color .15s, background .15s; }
+  nav a:hover { color: var(--fg); }
+  nav a[aria-current] { background: var(--fg); color: var(--bg); }
+  input, button { font: inherit; font-size: .9rem; color: inherit; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: .4rem .9rem; }
+  input { width: 14rem; }
+  input:focus-visible, button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .tags { display: flex; flex-wrap: wrap; gap: .35rem; padding-bottom: .75rem; }
+  .tags button { cursor: pointer; font-size: .78rem; padding: .2rem .7rem; color: var(--muted); transition: color .15s, border-color .15s; }
+  .tags button:hover { color: var(--fg); border-color: var(--muted); }
+  .tags button[aria-pressed="true"] { color: var(--accent); border-color: var(--accent); }
+  li .chips { display: flex; flex-wrap: wrap; gap: .3rem; margin-top: .6rem; }
+  li .chips span { font-size: .7rem; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: .05rem .5rem; }
+
+  main { padding-bottom: 4rem; }
+  h2 { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 1.75rem; margin: 2.5rem 0 1rem; }
+  h2 small { font-family: Inter, sans-serif; font-size: .8rem; color: var(--muted); margin-left: .5rem; }
+  ul { list-style: none; padding: 0; margin: 0; display: grid; gap: .75rem; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); }
+  li { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: 1rem; padding: 1rem 1.1rem; transition: border-color .2s, transform .2s; }
+  li:hover { border-color: var(--accent); transform: translateY(-2px); }
+  li .head { display: flex; align-items: center; gap: .6rem; }
+  li img { width: 20px; height: 20px; border-radius: 4px; flex: none; }
+  li a { color: var(--fg); font-weight: 600; text-decoration: none; }
+  li a::after { content: ''; position: absolute; inset: 0; border-radius: inherit; }
+  li .dom { color: var(--muted); font-size: .75rem; margin-left: auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 45%; }
+  li p { margin: .5rem 0 0; color: var(--muted); font-size: .9rem; }
+  footer { color: var(--muted); font-size: .85rem; padding: 2rem 0; border-top: 1px solid var(--line); }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="wrap hero">
+  <h1>Tech<em>Dictionary</em></h1>
+  <p>Documentación oficial, bibliotecas de componentes y herramientas útiles, ordenadas por tecnología y en un solo sitio.</p>
+</div>
+<header>
+  <div class="wrap bar">
+    <nav id="tabs" aria-label="Categorías"></nav>
+    <input id="q" type="search" placeholder="Buscar en todo…  ( / )" aria-label="Buscar">
+  </div>
+  <div class="wrap tags" id="etiquetas" aria-label="Filtrar por etiqueta"></div>
+</header>
+<main id="main" class="wrap" aria-live="polite">Cargando…</main>
+<footer class="wrap" id="pie"></footer>
+<script>
+  const $ = s => document.querySelector(s);
+  const el = (tag, props, ...kids) => { const e = Object.assign(document.createElement(tag), props); e.append(...kids); return e; };
+  let data, tag = null;
+
+  async function load() {
+    try {
+      const r = await fetch('data.json', { cache: 'no-cache' });
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      data = await r.json();
+      $('#tabs').replaceChildren(...data.categorias.map(c => el('a', { href: '#' + c.id, textContent: c.nombre })));
+      const todos = data.categorias.flatMap(c => c.secciones.flatMap(s => s.enlaces));
+      const tags = [...new Set(todos.flatMap(l => l.tags || []))].sort();
+      $('#etiquetas').replaceChildren(...tags.map(t => el('button', { type: 'button', textContent: t,
+        onclick() { tag = tag === t ? null : t; render(); } })));
+      $('#pie').textContent = `${todos.length} enlaces · actualizado ${data.actualizado}`;
+      render();
+    } catch (e) {
+      $('#main').textContent = 'No se pudo cargar data.json (' + e.message + ').';
+    }
+  }
+
+  function tarjeta(l) {
+    const dominio = new URL(l.url).hostname.replace(/^www\./, '');
+    // ponytail: favicons via DuckDuckGo (tercero ve qué dominios se piden); quitar la img si molesta
+    const icono = el('img', { src: `https://icons.duckduckgo.com/ip3/${dominio}.ico`, alt: '', loading: 'lazy', onerror() { this.remove(); } });
+    return el('li', {},
+      el('div', { className: 'head' }, icono,
+        el('a', { href: l.url, target: '_blank', rel: 'noopener', textContent: l.nombre }),
+        el('span', { className: 'dom', textContent: dominio })),
+      el('p', { textContent: l.desc }),
+      ...(l.tags ? [el('div', { className: 'chips' }, ...l.tags.map(t => el('span', { textContent: t })))] : []));
+  }
+
+  function render() {
+    const q = $('#q').value.trim().toLowerCase();
+    const global = q || tag; // buscando o filtrando: se mira en todas las categorías
+    const actual = data.categorias.find(c => '#' + c.id === location.hash) || data.categorias[0];
+    document.querySelectorAll('#tabs a').forEach(a => a.ariaCurrent = !global && a.hash === '#' + actual.id ? 'page' : null);
+    document.querySelectorAll('#etiquetas button').forEach(b => b.ariaPressed = b.textContent === tag);
+    const out = [];
+    for (const c of global ? data.categorias : [actual]) for (const s of c.secciones) {
+      const enlaces = s.enlaces.filter(l => (!q || (l.nombre + ' ' + l.desc).toLowerCase().includes(q)) && (!tag || l.tags?.includes(tag)));
+      if (enlaces.length) out.push(el('section', {},
+        el('h2', {}, s.nombre, el('small', { textContent: global ? c.nombre : enlaces.length })),
+        el('ul', {}, ...enlaces.map(tarjeta))));
+    }
+    $('#main').replaceChildren(...(out.length ? out : [el('p', { textContent: 'Sin resultados.' })]));
+  }
+
+  addEventListener('hashchange', () => { $('#q').value = ''; tag = null; render(); });
+  addEventListener('keydown', e => { if (e.key === '/' && document.activeElement !== $('#q')) { e.preventDefault(); $('#q').focus(); } });
+  $('#q').addEventListener('input', render);
+  load();
+</script>
+</body>
+</html>

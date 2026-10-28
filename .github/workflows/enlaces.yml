@@ -1,0 +1,29 @@
+name: Comprobar data.json y enlaces
+
+on:
+  push:
+    paths: [data.json]
+  pull_request:
+    paths: [data.json]
+  schedule:
+    - cron: "0 6 * * 1" # lunes 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  comprobar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: data.json es JSON válido y cada enlace tiene nombre, url https y desc
+        run: jq -e '[.categorias[].secciones[].enlaces[] | select((.nombre|not) or (.desc|not) or (.url|startswith("https://")|not))] | length == 0' data.json
+
+      - name: Enlaces rotos
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # 403/429: webs que bloquean bots aunque funcionen en el navegador
+          args: --no-progress --max-retries 2 --accept '200..=299,403,429' data.json
+          fail: true
