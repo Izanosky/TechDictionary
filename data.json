@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-28",
+  "actualizado": "2026-10-29",
   "categorias": [
     {
       "id": "python",
@@ -709,6 +709,14 @@
               "tags": [
                 "open source"
               ]
+            },
+            {
+              "nombre": "napi-rs",
+              "url": "https://napi.rs/",
+              "desc": "Módulos nativos de Node escritos en Rust, precompilados. MIT.",
+              "tags": [
+                "open source"
+              ]
             }
           ]
         },
@@ -718,9 +726,17 @@
             {
               "nombre": "Tauri",
               "url": "https://tauri.app/",
-              "desc": "Apps de escritorio y móvil con frontend web y backend en Rust; mucho más ligeras que Electron.",
+              "desc": "Apps de escritorio y móvil con frontend web y backend en Rust; mucho más ligeras que Electron. Ojo: en Windows usa WebView2, que es gratis pero no open source y envía datos de diagnóstico obligatorios.",
               "tags": [
                 "open source"
+              ]
+            },
+            {
+              "nombre": "WebView2: datos y privacidad",
+              "url": "https://learn.microsoft.com/microsoft-edge/webview2/concepts/data-privacy",
+              "desc": "Qué datos recoge WebView2 (lo que usa Tauri en Windows); los obligatorios no se pueden desactivar.",
+              "tags": [
+                "oficial"
               ]
             },
             {
@@ -2098,9 +2114,17 @@
             {
               "nombre": "Deno",
               "url": "https://deno.com/",
-              "desc": "Runtime seguro por defecto con TypeScript integrado. Ojo: Cloudflare lo compró en octubre de 2026 y solo recibirá parches hasta finales de 2027; no es buena idea para proyectos nuevos.",
+              "desc": "Runtime seguro por defecto con TypeScript integrado. Ojo: Cloudflare lo compró en octubre de 2026 y solo recibirá parches un año más (hasta octubre de 2027); no es buena idea para proyectos nuevos.",
               "tags": [
                 "open source"
+              ]
+            },
+            {
+              "nombre": "Deno se une a Cloudflare",
+              "url": "https://deno.com/blog/cloudflare",
+              "desc": "Anuncio oficial: un año más de parches, Deno Deploy cierra en seis meses y JSR sigue.",
+              "tags": [
+                "oficial"
               ]
             }
           ]
@@ -2138,6 +2162,30 @@
               "desc": "Framework estructurado con módulos e inyección de dependencias, para backends grandes.",
               "tags": [
                 "open source"
+              ]
+            },
+            {
+              "nombre": "Electron",
+              "url": "https://www.electronjs.org/",
+              "desc": "Apps de escritorio con tecnología web; incluye Chromium y Node. MIT.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Electron: guía de seguridad",
+              "url": "https://www.electronjs.org/docs/latest/tutorial/security",
+              "desc": "Checklist oficial imprescindible antes de publicar una app (aislamiento de contexto, sandbox, CSP…).",
+              "tags": [
+                "oficial"
+              ]
+            },
+            {
+              "nombre": "Electron Releases",
+              "url": "https://releases.electronjs.org/",
+              "desc": "Versiones de Electron y qué Chromium y Node lleva cada una.",
+              "tags": [
+                "oficial"
               ]
             }
           ]
