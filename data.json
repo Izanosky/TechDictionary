@@ -1,14 +1,47 @@
 {
   "actualizado": "2026-11-11",
+  "grupos": [
+    {
+      "nombre": "Programar",
+      "desc": "Cada lenguaje con su documentación, sus librerías y sus herramientas.",
+      "tono": 250
+    },
+    {
+      "nombre": "Hacer webs y apps",
+      "desc": "Del frontend a la base de datos, y las piezas que no merece la pena programar.",
+      "tono": 35
+    },
+    {
+      "nombre": "Trabajar con IA",
+      "desc": "Agentes de programación, skills para Claude Code y modelos para crear.",
+      "tono": 175
+    },
+    {
+      "nombre": "Diseñar y crear",
+      "desc": "Inspiración, tipografía, iconos, color y herramientas creativas.",
+      "tono": 350
+    },
+    {
+      "nombre": "Herramientas",
+      "desc": "Publicar, editar código y convertir documentos.",
+      "tono": 120
+    },
+    {
+      "nombre": "Aprender y estar al día",
+      "desc": "Rutas para aprender y pocas fuentes buenas para seguir la actualidad.",
+      "tono": 75
+    }
+  ],
   "categorias": [
     {
       "id": "python",
-      "grupo": "Lenguajes",
+      "grupo": "Programar",
       "nombre": "Python",
       "desc": "Lenguaje generalista: scripts, web, datos e inteligencia artificial.",
       "secciones": [
         {
           "nombre": "Documentación oficial",
+          "desc": "La referencia del lenguaje, los paquetes y la guía de estilo.",
           "enlaces": [
             {
               "nombre": "Documentación de Python",
@@ -55,6 +88,7 @@
         },
         {
           "nombre": "Frameworks web",
+          "desc": "Para hacer APIs y webs en el servidor.",
           "enlaces": [
             {
               "nombre": "Django",
@@ -117,6 +151,7 @@
         },
         {
           "nombre": "Interfaces y componentes",
+          "desc": "Interfaces sin escribir frontend: apps de datos, de escritorio, de terminal y juegos.",
           "enlaces": [
             {
               "nombre": "Streamlit",
@@ -187,6 +222,7 @@
         },
         {
           "nombre": "Datos y ciencia",
+          "desc": "Cargar, analizar y dibujar datos.",
           "enlaces": [
             {
               "nombre": "NumPy",
@@ -256,6 +292,7 @@
         },
         {
           "nombre": "Machine learning",
+          "desc": "Entrenar y usar modelos.",
           "enlaces": [
             {
               "nombre": "scikit-learn",
@@ -285,6 +322,7 @@
         },
         {
           "nombre": "Scraping, imagen y automatización",
+          "desc": "Descargar webs, controlar un navegador y tratar imágenes.",
           "enlaces": [
             {
               "nombre": "Requests",
@@ -338,6 +376,7 @@
         },
         {
           "nombre": "Bibliotecas útiles",
+          "desc": "Lo que aparece en casi cualquier proyecto: HTTP, validación, base de datos, CLI y logs.",
           "enlaces": [
             {
               "nombre": "httpx",
@@ -431,6 +470,7 @@
         },
         {
           "nombre": "Herramientas",
+          "desc": "Instalar paquetes, formatear, comprobar tipos y testear.",
           "enlaces": [
             {
               "nombre": "uv",
@@ -500,6 +540,7 @@
         },
         {
           "nombre": "Aprender",
+          "desc": "Cursos y listas para empezar o profundizar.",
           "enlaces": [
             {
               "nombre": "Real Python",
@@ -533,12 +574,13 @@
     },
     {
       "id": "rust",
-      "grupo": "Lenguajes",
+      "grupo": "Programar",
       "nombre": "Rust",
       "desc": "Rendimiento de C sin errores de memoria: CLIs, backends, WebAssembly y apps de escritorio.",
       "secciones": [
         {
           "nombre": "Documentación oficial",
+          "desc": "Los libros oficiales y ejercicios para aprender Rust.",
           "enlaces": [
             {
               "nombre": "The Rust Book",
@@ -601,6 +643,7 @@
         },
         {
           "nombre": "Encontrar crates",
+          "desc": "Dónde buscar librerías y cuáles usa la comunidad.",
           "enlaces": [
             {
               "nombre": "crates.io",
@@ -629,6 +672,7 @@
         },
         {
           "nombre": "Bibliotecas útiles",
+          "desc": "Las crates que usa casi todo el mundo: serializar, async, web, CLI y errores.",
           "enlaces": [
             {
               "nombre": "serde",
@@ -722,6 +766,7 @@
         },
         {
           "nombre": "Interfaces y apps",
+          "desc": "Apps de escritorio, web con WebAssembly, terminal y juegos.",
           "enlaces": [
             {
               "nombre": "Tauri",
@@ -783,6 +828,7 @@
         },
         {
           "nombre": "Herramientas",
+          "desc": "Instalar Rust, linter, autocompletado y tests.",
           "enlaces": [
             {
               "nombre": "rustup",
@@ -839,12 +885,13 @@
     },
     {
       "id": "go",
-      "grupo": "Lenguajes",
+      "grupo": "Programar",
       "nombre": "Go",
       "desc": "Lenguaje simple y compilado, muy usado en backends, CLIs e infraestructura.",
       "secciones": [
         {
           "nombre": "Documentación oficial",
+          "desc": "Referencia, tour interactivo y ejemplos oficiales.",
           "enlaces": [
             {
               "nombre": "Documentación de Go",
@@ -887,6 +934,7 @@
         },
         {
           "nombre": "Frameworks web",
+          "desc": "Routers y frameworks para APIs HTTP.",
           "enlaces": [
             {
               "nombre": "Gin",
@@ -924,6 +972,7 @@
         },
         {
           "nombre": "Bibliotecas útiles",
+          "desc": "SQL tipado, CLIs, interfaces de terminal, plantillas y tests.",
           "enlaces": [
             {
               "nombre": "sqlc",
@@ -977,6 +1026,7 @@
         },
         {
           "nombre": "Herramientas",
+          "desc": "Linter, recarga en caliente y probar código online.",
           "enlaces": [
             {
               "nombre": "golangci-lint",
@@ -1008,12 +1058,13 @@
     },
     {
       "id": "javascript",
-      "grupo": "Lenguajes",
+      "grupo": "Programar",
       "nombre": "JavaScript / TS",
       "desc": "El lenguaje de la web. Aquí, lo que sirve sin importar el framework.",
       "secciones": [
         {
           "nombre": "Documentación oficial",
+          "desc": "El lenguaje, TypeScript y qué soporta cada navegador.",
           "enlaces": [
             {
               "nombre": "MDN Web Docs",
@@ -1054,6 +1105,7 @@
         },
         {
           "nombre": "Bibliotecas útiles",
+          "desc": "Validar datos, fechas, popovers, gráficas y 3D, sin depender del framework.",
           "enlaces": [
             {
               "nombre": "Zod",
@@ -1107,6 +1159,7 @@
         },
         {
           "nombre": "Herramientas",
+          "desc": "Empaquetar, testear, formatear y encontrar código muerto.",
           "enlaces": [
             {
               "nombre": "Vite",
@@ -1162,12 +1215,13 @@
     },
     {
       "id": "react",
-      "grupo": "Frontend",
+      "grupo": "Hacer webs y apps",
       "nombre": "React",
       "desc": "La biblioteca de interfaces con el ecosistema más grande.",
       "secciones": [
         {
           "nombre": "Documentación oficial",
+          "desc": "React, su compilador y React Native.",
           "enlaces": [
             {
               "nombre": "React",
@@ -1199,6 +1253,7 @@
         },
         {
           "nombre": "Frameworks y routing",
+          "desc": "Para pasar de componentes a una app completa, con rutas y servidor.",
           "enlaces": [
             {
               "nombre": "Next.js",
@@ -1237,6 +1292,7 @@
         },
         {
           "nombre": "Bibliotecas de componentes",
+          "desc": "Botones, diálogos y bloques ya hechos. Arriba, la base accesible; abajo, efectos para landings.",
           "enlaces": [
             {
               "nombre": "shadcn/ui",
@@ -1428,6 +1484,7 @@
         },
         {
           "nombre": "Estilos con Tailwind",
+          "desc": "Variantes y clases de Tailwind sin conflictos.",
           "enlaces": [
             {
               "nombre": "CVA",
@@ -1449,6 +1506,7 @@
         },
         {
           "nombre": "Datos y estado",
+          "desc": "Pedir datos al servidor, formularios, tablas y estado global.",
           "enlaces": [
             {
               "nombre": "TanStack Query",
@@ -1528,6 +1586,7 @@
         },
         {
           "nombre": "Interfaz y animación",
+          "desc": "Animaciones, avisos, menús de comandos, arrastrar y soltar, 3D y emails.",
           "enlaces": [
             {
               "nombre": "Motion",
@@ -1619,6 +1678,7 @@
         },
         {
           "nombre": "Gráficas",
+          "desc": "Gráficas y dashboards.",
           "enlaces": [
             {
               "nombre": "Nivo",
@@ -1656,6 +1716,7 @@
         },
         {
           "nombre": "Editores, diagramas y documentos",
+          "desc": "Texto enriquecido, diagramas de nodos y PDFs.",
           "enlaces": [
             {
               "nombre": "React Flow",
@@ -1694,6 +1755,7 @@
         },
         {
           "nombre": "Auth e idiomas",
+          "desc": "Inicio de sesión y traducciones.",
           "enlaces": [
             {
               "nombre": "Auth.js",
@@ -1723,6 +1785,7 @@
         },
         {
           "nombre": "Móvil (React Native)",
+          "desc": "Rutas, estilos y componentes para apps móviles.",
           "enlaces": [
             {
               "nombre": "Expo Router",
@@ -1752,6 +1815,7 @@
         },
         {
           "nombre": "Herramientas",
+          "desc": "Depurar, documentar componentes y testear.",
           "enlaces": [
             {
               "nombre": "React Developer Tools",
@@ -1789,6 +1853,7 @@
         },
         {
           "nombre": "Aprender",
+          "desc": "Patrones, arquitectura y tipos en React.",
           "enlaces": [
             {
               "nombre": "patterns.dev",
@@ -1825,12 +1890,13 @@
     },
     {
       "id": "frameworks",
-      "grupo": "Frontend",
+      "grupo": "Hacer webs y apps",
       "nombre": "Otros frameworks",
       "desc": "Alternativas a React y sus bibliotecas de componentes.",
       "secciones": [
         {
           "nombre": "Frameworks",
+          "desc": "Alternativas a React: más ligeras, más cerca del HTML o con menos JavaScript en el cliente.",
           "enlaces": [
             {
               "nombre": "Vue",
@@ -1894,6 +1960,7 @@
         },
         {
           "nombre": "Componentes para Vue",
+          "desc": "Bibliotecas de componentes para Vue y Nuxt.",
           "enlaces": [
             {
               "nombre": "Nuxt UI",
@@ -1925,6 +1992,7 @@
         },
         {
           "nombre": "Componentes para Svelte",
+          "desc": "Bibliotecas de componentes para Svelte.",
           "enlaces": [
             {
               "nombre": "shadcn-svelte",
@@ -1951,12 +2019,13 @@
     },
     {
       "id": "css",
-      "grupo": "Frontend",
+      "grupo": "Hacer webs y apps",
       "nombre": "CSS y animación",
       "desc": "Estilos, maquetación y movimiento, para cualquier framework.",
       "secciones": [
         {
           "nombre": "Aprender",
+          "desc": "CSS moderno explicado, y cómo hacer que no se rompa con contenido real.",
           "enlaces": [
             {
               "nombre": "Learn CSS (web.dev)",
@@ -1987,6 +2056,7 @@
         },
         {
           "nombre": "Frameworks y estilos",
+          "desc": "Estilos de base para no empezar de cero.",
           "enlaces": [
             {
               "nombre": "Tailwind CSS",
@@ -2034,6 +2104,7 @@
         },
         {
           "nombre": "Animación",
+          "desc": "Librerías de animación y lo que el navegador ya hace solo.",
           "enlaces": [
             {
               "nombre": "GSAP",
@@ -2110,6 +2181,7 @@
         },
         {
           "nombre": "Herramientas",
+          "desc": "Curvas de animación, tipografía fluida, sombras, fondos y escalas de color.",
           "enlaces": [
             {
               "nombre": "cubic-bezier.com",
@@ -2142,12 +2214,13 @@
     },
     {
       "id": "node",
-      "grupo": "Backend",
+      "grupo": "Hacer webs y apps",
       "nombre": "Node.js",
       "desc": "JavaScript en el servidor: APIs, herramientas y scripts.",
       "secciones": [
         {
           "nombre": "Documentación oficial",
+          "desc": "La API de Node, sus guías y npm.",
           "enlaces": [
             {
               "nombre": "API de Node.js",
@@ -2177,6 +2250,7 @@
         },
         {
           "nombre": "Runtimes alternativos",
+          "desc": "Otros motores para ejecutar JavaScript en el servidor.",
           "enlaces": [
             {
               "nombre": "Bun",
@@ -2206,6 +2280,7 @@
         },
         {
           "nombre": "Frameworks",
+          "desc": "Para hacer APIs y servidores; Electron, para apps de escritorio.",
           "enlaces": [
             {
               "nombre": "Express",
@@ -2267,6 +2342,7 @@
         },
         {
           "nombre": "Bibliotecas útiles",
+          "desc": "Base de datos (ORM), autenticación, APIs tipadas y logs.",
           "enlaces": [
             {
               "nombre": "Prisma",
@@ -2312,6 +2388,7 @@
         },
         {
           "nombre": "Herramientas",
+          "desc": "Gestor de paquetes rápido y TypeScript sin compilar.",
           "enlaces": [
             {
               "nombre": "pnpm",
@@ -2335,12 +2412,13 @@
     },
     {
       "id": "datos",
-      "grupo": "Backend",
+      "grupo": "Hacer webs y apps",
       "nombre": "Bases de datos",
       "desc": "Motores, servicios con plan gratis y herramientas para trabajar con datos.",
       "secciones": [
         {
           "nombre": "Motores",
+          "desc": "Las bases de datos en sí.",
           "enlaces": [
             {
               "nombre": "PostgreSQL",
@@ -2380,6 +2458,7 @@
         },
         {
           "nombre": "Aprender",
+          "desc": "Entender SQL y los índices.",
           "enlaces": [
             {
               "nombre": "Use The Index, Luke",
@@ -2398,6 +2477,7 @@
         },
         {
           "nombre": "Servicios con plan gratis",
+          "desc": "Bases de datos en la nube sin pagar al empezar.",
           "enlaces": [
             {
               "nombre": "Supabase",
@@ -2428,6 +2508,7 @@
         },
         {
           "nombre": "Herramientas",
+          "desc": "Clientes para consultar y diseñar esquemas.",
           "enlaces": [
             {
               "nombre": "DBeaver",
@@ -2451,12 +2532,13 @@
     },
     {
       "id": "piezas",
-      "grupo": "Backend",
+      "grupo": "Hacer webs y apps",
       "nombre": "Piezas para tu web",
-      "desc": "CMS, búsqueda, email, mapas y documentación: lo que no merece la pena programar desde cero.",
+      "desc": "CMS, búsqueda, email, mapas y webs de documentación.",
       "secciones": [
         {
           "nombre": "CMS headless",
+          "desc": "Un panel para que otros editen el contenido de tu web.",
           "enlaces": [
             {
               "nombre": "Payload",
@@ -2486,6 +2568,7 @@
         },
         {
           "nombre": "Búsqueda",
+          "desc": "Un buscador para tu web, de estático a servidor.",
           "enlaces": [
             {
               "nombre": "Pagefind",
@@ -2515,6 +2598,7 @@
         },
         {
           "nombre": "Email",
+          "desc": "Enviar correos desde tu app.",
           "enlaces": [
             {
               "nombre": "Resend",
@@ -2537,6 +2621,7 @@
         },
         {
           "nombre": "Mapas",
+          "desc": "Mapas interactivos sin Google Maps.",
           "enlaces": [
             {
               "nombre": "Leaflet",
@@ -2566,6 +2651,7 @@
         },
         {
           "nombre": "Webs de documentación",
+          "desc": "Una web de documentación a partir de Markdown.",
           "enlaces": [
             {
               "nombre": "Starlight",
@@ -2601,471 +2687,18 @@
             }
           ]
         }
-      ]
-    },
-    {
-      "id": "devops",
-      "grupo": "Herramientas",
-      "nombre": "DevOps y despliegue",
-      "desc": "Git, contenedores, CI y dónde publicar gratis.",
-      "secciones": [
-        {
-          "nombre": "Git y GitHub",
-          "enlaces": [
-            {
-              "nombre": "Pro Git",
-              "url": "https://git-scm.com/book/es/v2",
-              "desc": "El libro oficial de Git, gratis.",
-              "tags": [
-                "oficial",
-                "español"
-              ]
-            },
-            {
-              "nombre": "GitHub Docs",
-              "url": "https://docs.github.com/es",
-              "desc": "Documentación de GitHub, Actions y Pages.",
-              "tags": [
-                "oficial",
-                "español"
-              ]
-            },
-            {
-              "nombre": "GitHub Actions",
-              "url": "https://docs.github.com/es/actions",
-              "desc": "CI/CD integrado en GitHub; gratis en repos públicos.",
-              "tags": [
-                "oficial",
-                "español"
-              ]
-            },
-            {
-              "nombre": "act",
-              "url": "https://github.com/nektos/act",
-              "desc": "Ejecuta tus GitHub Actions en local antes de hacer push.",
-              "tags": [
-                "open source"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Seguridad del código",
-          "enlaces": [
-            {
-              "nombre": "Semgrep",
-              "url": "https://github.com/semgrep/semgrep",
-              "desc": "Análisis estático en más de 30 lenguajes: busca fallos y vulnerabilidades con reglas legibles. El motor es libre.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "Betterleaks",
-              "url": "https://github.com/betterleaks/betterleaks",
-              "desc": "Busca secretos filtrados (claves de API, credenciales) en el código y el historial de git.",
-              "tags": [
-                "open source"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Contenedores",
-          "enlaces": [
-            {
-              "nombre": "Docker Docs",
-              "url": "https://docs.docker.com/",
-              "desc": "Imágenes, contenedores y Docker Compose.",
-              "tags": [
-                "oficial"
-              ]
-            },
-            {
-              "nombre": "Podman",
-              "url": "https://podman.io/",
-              "desc": "Alternativa a Docker sin demonio y sin root.",
-              "tags": [
-                "open source"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Servidores",
-          "enlaces": [
-            {
-              "nombre": "Caddy",
-              "url": "https://caddyserver.com/",
-              "desc": "Servidor web con HTTPS automático y configuración mínima.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "Coolify",
-              "url": "https://coolify.io/",
-              "desc": "Tu propio Heroku/Vercel en un VPS.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "Let's Encrypt",
-              "url": "https://letsencrypt.org/es/",
-              "desc": "Certificados HTTPS gratuitos.",
-              "tags": [
-                "español"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Monitorización y analítica",
-          "enlaces": [
-            {
-              "nombre": "Uptime Kuma",
-              "url": "https://github.com/louislam/uptime-kuma",
-              "desc": "Monitor de disponibilidad autoalojado con alertas y páginas de estado.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "Gatus",
-              "url": "https://gatus.io/",
-              "desc": "Monitorización definida en YAML, junto a tu infraestructura.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "Upptime",
-              "url": "https://upptime.js.org/",
-              "desc": "Monitor y página de estado que funcionan solo con GitHub Actions.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "Umami",
-              "url": "https://umami.is/",
-              "desc": "Analítica web sencilla y respetuosa con la privacidad.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "Plausible",
-              "url": "https://plausible.io/",
-              "desc": "Analítica sin cookies; la Community Edition se autoaloja gratis.",
-              "tags": [
-                "open source",
-                "freemium"
-              ]
-            },
-            {
-              "nombre": "GlitchTip",
-              "url": "https://glitchtip.com/",
-              "desc": "Seguimiento de errores compatible con los SDK de Sentry.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "Prometheus",
-              "url": "https://prometheus.io/",
-              "desc": "Métricas y alertas; el estándar junto a Grafana.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "Grafana",
-              "url": "https://grafana.com/",
-              "desc": "Dashboards para métricas, logs y trazas.",
-              "tags": [
-                "open source",
-                "freemium"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Hosting con plan gratis",
-          "enlaces": [
-            {
-              "nombre": "GitHub Pages",
-              "url": "https://docs.github.com/es/pages",
-              "desc": "Webs estáticas gratis desde un repositorio (esta misma página).",
-              "tags": [
-                "español"
-              ]
-            },
-            {
-              "nombre": "Cloudflare Pages",
-              "url": "https://pages.cloudflare.com/",
-              "desc": "Webs estáticas y full-stack con un plan gratis muy generoso.",
-              "tags": [
-                "freemium"
-              ]
-            },
-            {
-              "nombre": "Netlify",
-              "url": "https://www.netlify.com/",
-              "desc": "Despliegue de webs con previews por rama.",
-              "tags": [
-                "freemium"
-              ]
-            },
-            {
-              "nombre": "Vercel",
-              "url": "https://vercel.com/",
-              "desc": "Despliegue optimizado para Next.js; el plan Hobby es gratis para uso personal.",
-              "tags": [
-                "freemium"
-              ]
-            },
-            {
-              "nombre": "Render",
-              "url": "https://render.com/",
-              "desc": "Webs, APIs y bases de datos con plan gratis (se duerme sin tráfico).",
-              "tags": [
-                "freemium"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "utilidades",
-      "grupo": "Herramientas",
-      "nombre": "Editores y utilidades",
-      "desc": "Editores, clientes de API y pequeñas herramientas del día a día.",
-      "secciones": [
-        {
-          "nombre": "Editores",
-          "enlaces": [
-            {
-              "nombre": "VS Code",
-              "url": "https://code.visualstudio.com/",
-              "desc": "El editor más usado, con extensiones para todo.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "VSCodium",
-              "url": "https://vscodium.com/",
-              "desc": "VS Code sin telemetría ni marca de Microsoft.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "Zed",
-              "url": "https://zed.dev/",
-              "desc": "Editor muy rápido escrito en Rust, con colaboración en tiempo real.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "Neovim",
-              "url": "https://neovim.io/",
-              "desc": "Vim moderno y extensible con Lua.",
-              "tags": [
-                "open source"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "APIs",
-          "enlaces": [
-            {
-              "nombre": "Hoppscotch",
-              "url": "https://hoppscotch.io/",
-              "desc": "Alternativa a Postman en el navegador, sin cuenta.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "Bruno",
-              "url": "https://www.usebruno.com/",
-              "desc": "Cliente de APIs que guarda las colecciones como archivos en tu repo.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "Public APIs",
-              "url": "https://github.com/public-apis/public-apis",
-              "desc": "Lista enorme de APIs gratuitas para proyectos.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "JSONPlaceholder",
-              "url": "https://jsonplaceholder.typicode.com/",
-              "desc": "API falsa gratis para pruebas y prototipos."
-            }
-          ]
-        },
-        {
-          "nombre": "Terminal",
-          "enlaces": [
-            {
-              "nombre": "tldr pages",
-              "url": "https://tldr.sh/",
-              "desc": "Páginas man resumidas con ejemplos prácticos.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "explainshell",
-              "url": "https://explainshell.com/",
-              "desc": "Pega un comando y te explica cada parte.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "Starship",
-              "url": "https://starship.rs/es-ES/",
-              "desc": "Prompt rápido y personalizable para cualquier shell.",
-              "tags": [
-                "open source",
-                "español"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Diagramas y documentos",
-          "enlaces": [
-            {
-              "nombre": "Mermaid",
-              "url": "https://mermaid.js.org/",
-              "desc": "Diagramas desde texto; se ven directamente en GitHub, Notion y Obsidian.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "D2",
-              "url": "https://d2lang.com/",
-              "desc": "Diagramas como código con mejor maquetación automática.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "Typst",
-              "url": "https://typst.app/",
-              "desc": "Alternativa moderna a LaTeX: sintaxis simple y compilación instantánea.",
-              "tags": [
-                "open source",
-                "freemium"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Utilidades web",
-          "enlaces": [
-            {
-              "nombre": "DevDocs",
-              "url": "https://devdocs.io/",
-              "desc": "Cientos de documentaciones en un solo buscador, también sin conexión.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "regex101",
-              "url": "https://regex101.com/",
-              "desc": "Prueba y entiende expresiones regulares paso a paso."
-            },
-            {
-              "nombre": "crontab.guru",
-              "url": "https://crontab.guru/",
-              "desc": "Traduce expresiones cron a lenguaje humano."
-            },
-            {
-              "nombre": "transform.tools",
-              "url": "https://transform.tools/",
-              "desc": "Convierte JSON a tipos TypeScript, Rust, Go, Zod y mucho más.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "JSON Crack",
-              "url": "https://jsoncrack.com/",
-              "desc": "Visualiza JSON como un grafo navegable.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "Excalidraw",
-              "url": "https://excalidraw.com/",
-              "desc": "Pizarra para diagramas con aspecto dibujado a mano.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "Squoosh",
-              "url": "https://squoosh.app/",
-              "desc": "Comprime y convierte imágenes en el navegador.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "ray.so",
-              "url": "https://ray.so/",
-              "desc": "Capturas bonitas de fragmentos de código."
-            }
-          ]
-        },
-        {
-          "nombre": "Grabar pantalla",
-          "enlaces": [
-            {
-              "nombre": "OBS Studio",
-              "url": "https://obsproject.com/",
-              "desc": "Grabación y streaming, el más completo.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "OpenScreen",
-              "url": "https://github.com/siddharthvaddem/openscreen",
-              "desc": "Demos de producto con zoom, anotaciones y fondos (alternativa a Screen Studio). Aún sin audio.",
-              "tags": [
-                "open source"
-              ]
-            }
-          ]
-        }
-      ]
+      ],
+      "nota": "Lo que no merece la pena programar desde cero."
     },
     {
       "id": "ia",
-      "grupo": "Herramientas",
+      "grupo": "Trabajar con IA",
       "nombre": "IA y agentes",
       "desc": "Agentes de programación, modelos locales y SDKs para construir con IA.",
       "secciones": [
         {
           "nombre": "Documentación",
+          "desc": "Las referencias oficiales para trabajar con agentes.",
           "enlaces": [
             {
               "nombre": "Claude Code",
@@ -3096,6 +2729,7 @@
         },
         {
           "nombre": "Agentes de programación",
+          "desc": "Alternativas a Claude Code: agentes que escriben código en tu repo.",
           "enlaces": [
             {
               "nombre": "OpenCode",
@@ -3149,6 +2783,7 @@
         },
         {
           "nombre": "Generar apps e interfaces",
+          "desc": "Describes una app o una pantalla y la IA la genera.",
           "enlaces": [
             {
               "nombre": "v0",
@@ -3199,6 +2834,7 @@
         },
         {
           "nombre": "Modelos locales",
+          "desc": "Modelos en tu ordenador o en el navegador, sin API ni coste por uso.",
           "enlaces": [
             {
               "nombre": "Ollama",
@@ -3228,11 +2864,20 @@
               "tags": [
                 "open source"
               ]
+            },
+            {
+              "nombre": "runonweb",
+              "url": "https://runonweb.ai/",
+              "desc": "De midudev: IA que corre en el navegador del usuario (voz a texto, quitar fondos, OCR, traducir, embeddings) con un import por tarea. Sin servidor; los modelos pesan de 4 MB a varios GB y cada uno tiene su licencia.",
+              "tags": [
+                "open source"
+              ]
             }
           ]
         },
         {
           "nombre": "SDKs",
+          "desc": "Para meter IA en tu propia aplicación.",
           "enlaces": [
             {
               "nombre": "AI SDK",
@@ -3254,6 +2899,7 @@
         },
         {
           "nombre": "Prácticas",
+          "desc": "Cómo trabajar bien con agentes: artículos, guías y formatos.",
           "enlaces": [
             {
               "nombre": "Code review en Anthropic",
@@ -3306,6 +2952,7 @@
         },
         {
           "nombre": "Automatización",
+          "desc": "Flujos que conectan servicios con IA sin programarlo todo.",
           "enlaces": [
             {
               "nombre": "n8n",
@@ -3329,12 +2976,13 @@
     },
     {
       "id": "skills",
-      "grupo": "Herramientas",
+      "grupo": "Trabajar con IA",
       "nombre": "Skills para Claude Code",
-      "desc": "Skills y plugins probados en la plantilla harness-sdd-template. Una skill son instrucciones que el agente sigue con tus permisos: léela antes de instalarla.",
+      "desc": "Skills y plugins para Claude Code, probados en harness-sdd-template.",
       "secciones": [
         {
           "nombre": "Dónde encontrarlas",
+          "desc": "Colecciones y directorios de skills.",
           "enlaces": [
             {
               "nombre": "anthropics/skills",
@@ -3401,6 +3049,7 @@
         },
         {
           "nombre": "Flujo de trabajo y contexto",
+          "desc": "Cómo trabaja el agente: método, memoria entre sesiones y contexto.",
           "enlaces": [
             {
               "nombre": "Superpowers",
@@ -3498,6 +3147,7 @@
         },
         {
           "nombre": "Diseño e interfaz",
+          "desc": "Para que las interfaces que genera no parezcan hechas con IA.",
           "enlaces": [
             {
               "nombre": "web-design-guidelines",
@@ -3569,6 +3219,7 @@
         },
         {
           "nombre": "Calidad, pruebas y decisiones",
+          "desc": "Tests, revisión, simplicidad y decidir con criterio.",
           "enlaces": [
             {
               "nombre": "property-based-testing",
@@ -3640,6 +3291,7 @@
         },
         {
           "nombre": "Seguridad",
+          "desc": "Revisar código y configuración en busca de fallos de seguridad.",
           "enlaces": [
             {
               "nombre": "differential-review",
@@ -3724,7 +3376,8 @@
           ]
         },
         {
-          "nombre": "Por stack",
+          "nombre": "Para un stack concreto",
+          "desc": "Buenas prácticas de React, Next.js y Python.",
           "enlaces": [
             {
               "nombre": "vercel-react-best-practices",
@@ -3762,7 +3415,8 @@
           ]
         },
         {
-          "nombre": "Otros plugins",
+          "nombre": "Más plugins",
+          "desc": "Contexto, SEO, pentesting de tus propias apps, consumo de tokens y tareas.",
           "enlaces": [
             {
               "nombre": "context-mode",
@@ -3806,16 +3460,18 @@
             }
           ]
         }
-      ]
+      ],
+      "nota": "Una skill son instrucciones que el agente sigue con tus permisos: léela antes de instalarla."
     },
     {
       "id": "ia-creativa",
-      "grupo": "Herramientas",
+      "grupo": "Trabajar con IA",
       "nombre": "IA creativa",
-      "desc": "Imagen, vídeo y voz con IA. Lo local es gratis de verdad; lo online suele tener marca de agua y prohibir el uso comercial en el plan gratis.",
+      "desc": "Imagen, vídeo y voz con IA.",
       "secciones": [
         {
           "nombre": "Imagen y vídeo en local",
+          "desc": "Gratis de verdad, en tu ordenador. Necesitas una buena GPU.",
           "enlaces": [
             {
               "nombre": "ComfyUI",
@@ -3845,6 +3501,7 @@
         },
         {
           "nombre": "Online con plan gratis",
+          "desc": "Sin instalar nada, con límites y marca de agua.",
           "enlaces": [
             {
               "nombre": "Kling",
@@ -3871,6 +3528,7 @@
         },
         {
           "nombre": "Editar imágenes",
+          "desc": "Ampliar, quitar fondos y convertir a ASCII.",
           "enlaces": [
             {
               "nombre": "Upscayl",
@@ -3908,6 +3566,7 @@
         },
         {
           "nombre": "Voz y audio",
+          "desc": "De voz a texto y de texto a voz.",
           "enlaces": [
             {
               "nombre": "Whisper",
@@ -3943,365 +3602,18 @@
             }
           ]
         }
-      ]
-    },
-    {
-      "id": "documentos",
-      "grupo": "Herramientas",
-      "nombre": "Documentos y conversión",
-      "desc": "Convertir, extraer y preparar documentos, vídeo, imágenes y webs; también para dárselos a una IA.",
-      "secciones": [
-        {
-          "nombre": "PDF y documentos a Markdown",
-          "enlaces": [
-            {
-              "nombre": "MarkItDown",
-              "url": "https://github.com/microsoft/markitdown",
-              "desc": "De Microsoft: convierte PDF, Office, HTML e imágenes a Markdown. Ligero, sin GPU.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "Docling",
-              "url": "https://github.com/docling-project/docling",
-              "desc": "De IBM: PDFs con tablas y estructura a Markdown o JSON, en local.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "MinerU",
-              "url": "https://github.com/opendatalab/MinerU",
-              "desc": "PDF escaneados, tablas y fórmulas a Markdown/JSON con OCR. Desde la 3.1 usa una licencia propia basada en Apache 2.0 (antes AGPL).",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "Marker",
-              "url": "https://github.com/datalab-to/marker",
-              "desc": "PDF a Markdown muy preciso con modelos propios. Código GPL; los modelos son gratis solo para uso personal o empresas pequeñas.",
-              "tags": [
-                "source-available"
-              ]
-            },
-            {
-              "nombre": "OXR",
-              "url": "https://github.com/SoMarkAI/OXR",
-              "desc": "Modelo de 1,3B (oct. 2026) que parsea documentos con coordenadas de cada elemento. Sus benchmarks son propios y necesita GPU de 24 GB; pruébalo solo si los anteriores se quedan cortos."
-            }
-          ]
-        },
-        {
-          "nombre": "Web a Markdown (para IA)",
-          "enlaces": [
-            {
-              "nombre": "Jina Reader",
-              "url": "https://jina.ai/reader/",
-              "desc": "Antepón r.jina.ai/ a cualquier URL y obtienes la página en Markdown limpio.",
-              "tags": [
-                "freemium"
-              ]
-            },
-            {
-              "nombre": "Crawl4AI",
-              "url": "https://github.com/unclecode/crawl4ai",
-              "desc": "Rastreador en Python que saca webs a Markdown listo para LLMs.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "Firecrawl",
-              "url": "https://www.firecrawl.dev/",
-              "desc": "Rastrea webs enteras a Markdown o JSON; autoalojable (AGPL) o en la nube con plan gratis.",
-              "tags": [
-                "open source",
-                "freemium"
-              ]
-            },
-            {
-              "nombre": "Trafilatura",
-              "url": "https://trafilatura.readthedocs.io/",
-              "desc": "Extrae el texto principal de una página quitando menús y anuncios.",
-              "tags": [
-                "open source"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Convertir formatos",
-          "enlaces": [
-            {
-              "nombre": "Pandoc",
-              "url": "https://pandoc.org/",
-              "desc": "La navaja suiza de documentos: Markdown, Word, PDF, HTML, LaTeX, EPUB…",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "FFmpeg",
-              "url": "https://ffmpeg.org/",
-              "desc": "Convierte, recorta y comprime cualquier vídeo o audio desde la terminal.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "ImageMagick",
-              "url": "https://imagemagick.org/",
-              "desc": "Convierte y edita imágenes por lotes desde la terminal.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "HandBrake",
-              "url": "https://handbrake.fr/",
-              "desc": "Recomprime vídeos con interfaz gráfica.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "LibreOffice",
-              "url": "https://www.libreoffice.org/",
-              "desc": "Suite ofimática libre; en modo headless convierte Office a PDF por lotes.",
-              "tags": [
-                "open source"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "OCR (texto de imágenes)",
-          "enlaces": [
-            {
-              "nombre": "Tesseract",
-              "url": "https://github.com/tesseract-ocr/tesseract",
-              "desc": "El motor de OCR clásico, con más de 100 idiomas.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "OCRmyPDF",
-              "url": "https://ocrmypdf.readthedocs.io/",
-              "desc": "Añade una capa de texto buscable a PDFs escaneados.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "PaddleOCR",
-              "url": "https://github.com/PaddlePaddle/PaddleOCR",
-              "desc": "OCR moderno con buena precisión en tablas y textos difíciles.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "Unlimited-OCR",
-              "url": "https://github.com/baidu/Unlimited-OCR",
-              "desc": "Modelo de Baidu (3B, pesos abiertos) que procesa PDFs largos de una pasada manteniendo el contexto entre páginas: texto, tablas y fórmulas. En local con vLLM u Ollama.",
-              "tags": [
-                "open source"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Herramientas PDF",
-          "enlaces": [
-            {
-              "nombre": "Stirling-PDF",
-              "url": "https://www.stirlingpdf.com/",
-              "desc": "Unir, dividir, comprimir, firmar y convertir PDFs; autoalojable.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "PDF24 Tools",
-              "url": "https://tools.pdf24.org/es/",
-              "desc": "Decenas de herramientas PDF gratis en el navegador o como app de Windows.",
-              "tags": [
-                "español"
-              ]
-            },
-            {
-              "nombre": "qpdf",
-              "url": "https://qpdf.sourceforge.io/",
-              "desc": "Manipula PDFs desde la terminal: unir, cifrar, reparar.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "PDF.js",
-              "url": "https://mozilla.github.io/pdf.js/",
-              "desc": "Visor de PDF de Mozilla para incrustar en tu web.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "PdfCraft",
-              "url": "https://github.com/storytold/pdfcraft",
-              "desc": "Lector y editor de PDF escrito desde cero en Rust: abre al instante, sin cuenta ni telemetría, guardado atómico.",
-              "tags": [
-                "open source"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Datos (JSON y CSV)",
-          "enlaces": [
-            {
-              "nombre": "jq",
-              "url": "https://jqlang.org/",
-              "desc": "Filtra y transforma JSON desde la terminal.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "VisiData",
-              "url": "https://www.visidata.org/",
-              "desc": "Explora CSV, Excel y JSON como una hoja de cálculo en la terminal.",
-              "tags": [
-                "open source"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "al-dia",
-      "grupo": "Recursos",
-      "nombre": "Estar al día",
-      "desc": "Pocas fuentes y buenas en vez del timeline. Antes de creerte una novedad: ¿hay repo o artículo?, ¿las cifras son solo del autor?, ¿el \"gratis\" es real?, ¿resuelve un problema que ya tengas?",
-      "secciones": [
-        {
-          "nombre": "Leer cada semana",
-          "enlaces": [
-            {
-              "nombre": "Simon Willison",
-              "url": "https://simonwillison.net/",
-              "desc": "Prueba cada novedad y enseña lo que funciona y lo que no. El mejor filtro para desarrolladores."
-            },
-            {
-              "nombre": "Latent Space",
-              "url": "https://www.latent.space/",
-              "desc": "Newsletter y podcast para ingenieros de IA; incluye el resumen diario AI News.",
-              "tags": [
-                "freemium"
-              ]
-            },
-            {
-              "nombre": "Interconnects",
-              "url": "https://www.interconnects.ai/",
-              "desc": "Nathan Lambert: modelos abiertos, post-training y razonamiento, con rigor técnico.",
-              "tags": [
-                "freemium"
-              ]
-            },
-            {
-              "nombre": "Import AI",
-              "url": "https://jack-clark.net/",
-              "desc": "Resumen semanal de investigación y política de Jack Clark (cofundador de Anthropic)."
-            },
-            {
-              "nombre": "One Useful Thing",
-              "url": "https://www.oneusefulthing.org/",
-              "desc": "Ethan Mollick: cómo usar la IA en el trabajo real, con experimentos.",
-              "tags": [
-                "freemium"
-              ]
-            },
-            {
-              "nombre": "Ahead of AI",
-              "url": "https://magazine.sebastianraschka.com/",
-              "desc": "Sebastian Raschka explica cómo funcionan los LLM por dentro.",
-              "tags": [
-                "freemium"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Comparar modelos con datos",
-          "enlaces": [
-            {
-              "nombre": "Artificial Analysis",
-              "url": "https://artificialanalysis.ai/",
-              "desc": "Compara modelos por calidad, precio y velocidad con sus propias pruebas."
-            },
-            {
-              "nombre": "SWE-rebench",
-              "url": "https://swe-rebench.com/",
-              "desc": "Ranking de agentes de código con tareas nuevas cada mes, para evitar la contaminación de SWE-bench."
-            },
-            {
-              "nombre": "METR",
-              "url": "https://metr.org/",
-              "desc": "Mide cuánto tiempo de trabajo humano pueden hacer los agentes y su efecto real en la productividad."
-            },
-            {
-              "nombre": "Epoch AI",
-              "url": "https://epoch.ai/",
-              "desc": "Datos y tendencias de modelos: cómputo, coste y benchmarks."
-            },
-            {
-              "nombre": "LMArena",
-              "url": "https://lmarena.ai/",
-              "desc": "Ranking por votos de usuarios. Úsalo con cuidado: premia el estilo y los laboratorios pueden probar variantes en privado."
-            }
-          ]
-        },
-        {
-          "nombre": "Novedades de herramientas",
-          "enlaces": [
-            {
-              "nombre": "Best of JS",
-              "url": "https://bestofjs.org/",
-              "desc": "Los proyectos JavaScript que más crecen, filtrados y por categoría.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "JavaScript Rising Stars",
-              "url": "https://risingstars.js.org/",
-              "desc": "Resumen anual de los proyectos JS que más estrellas ganaron."
-            },
-            {
-              "nombre": "GitHub Trending",
-              "url": "https://github.com/trending",
-              "desc": "Repos que más crecen hoy; útil, pero lleno de modas pasajeras."
-            },
-            {
-              "nombre": "Hacker News",
-              "url": "https://news.ycombinator.com/",
-              "desc": "Noticias técnicas con comentarios muy críticos: buen antídoto contra el hype."
-            }
-          ]
-        }
-      ]
+      ],
+      "nota": "Lo local es gratis de verdad. Lo online suele poner marca de agua y prohibir el uso comercial en el plan gratis."
     },
     {
       "id": "diseno",
-      "grupo": "Recursos",
+      "grupo": "Diseñar y crear",
       "nombre": "Diseño",
       "desc": "Inspiración, tipografía, iconos, color y accesibilidad.",
       "secciones": [
         {
           "nombre": "DESIGN.md (diseño para agentes de IA)",
+          "desc": "Darle a un agente tu sistema de diseño en un fichero.",
           "enlaces": [
             {
               "nombre": "Especificación DESIGN.md",
@@ -4337,6 +3649,7 @@
         },
         {
           "nombre": "Inspiración",
+          "desc": "Webs y apps reales, para ver cómo lo resuelven otros.",
           "enlaces": [
             {
               "nombre": "Godly",
@@ -4428,6 +3741,7 @@
         },
         {
           "nombre": "Directorios de recursos",
+          "desc": "Listas grandes de recursos de diseño.",
           "enlaces": [
             {
               "nombre": "DesignBookmark",
@@ -4448,6 +3762,7 @@
         },
         {
           "nombre": "Herramientas de diseño",
+          "desc": "Diseñar interfaces, logos y pixel art.",
           "enlaces": [
             {
               "nombre": "Penpot",
@@ -4506,6 +3821,7 @@
         },
         {
           "nombre": "Moodboards",
+          "desc": "Guardar y ordenar referencias visuales.",
           "enlaces": [
             {
               "nombre": "Cosmos",
@@ -4545,6 +3861,7 @@
         },
         {
           "nombre": "Tipografía",
+          "desc": "Fuentes gratis, cómo combinarlas y escalas.",
           "enlaces": [
             {
               "nombre": "Google Fonts",
@@ -4583,6 +3900,7 @@
         },
         {
           "nombre": "Iconos e ilustraciones",
+          "desc": "Iconos, logos, ilustraciones, fondos y animaciones.",
           "enlaces": [
             {
               "nombre": "Lucide",
@@ -4642,6 +3960,7 @@
         },
         {
           "nombre": "Color",
+          "desc": "Crear paletas y probarlas.",
           "enlaces": [
             {
               "nombre": "Realtime Colors",
@@ -4668,6 +3987,7 @@
         },
         {
           "nombre": "Accesibilidad y UX",
+          "desc": "Contraste, accesibilidad y principios de UX.",
           "enlaces": [
             {
               "nombre": "WebAIM Contrast Checker",
@@ -4699,90 +4019,14 @@
       ]
     },
     {
-      "id": "aprender",
-      "grupo": "Recursos",
-      "nombre": "Aprender",
-      "desc": "Cursos, rutas y sitios para practicar, todos gratis o con plan gratis útil.",
-      "secciones": [
-        {
-          "nombre": "Rutas y cursos",
-          "enlaces": [
-            {
-              "nombre": "roadmap.sh",
-              "url": "https://roadmap.sh/",
-              "desc": "Rutas de aprendizaje por rol y tecnología.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "freeCodeCamp en español",
-              "url": "https://www.freecodecamp.org/espanol/",
-              "desc": "Cursos completos y certificaciones gratuitas de desarrollo web.",
-              "tags": [
-                "español",
-                "open source"
-              ]
-            },
-            {
-              "nombre": "The Odin Project",
-              "url": "https://www.theodinproject.com/",
-              "desc": "Currículo full-stack gratuito basado en proyectos.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "CS50x",
-              "url": "https://cs50.harvard.edu/x/",
-              "desc": "El curso de introducción a la informática de Harvard, gratis."
-            },
-            {
-              "nombre": "MDN: aprende desarrollo web",
-              "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development",
-              "desc": "Currículo de Mozilla de HTML, CSS y JavaScript desde cero.",
-              "tags": [
-                "oficial"
-              ]
-            }
-          ]
-        },
-        {
-          "nombre": "Practicar",
-          "enlaces": [
-            {
-              "nombre": "Exercism",
-              "url": "https://exercism.org/",
-              "desc": "Ejercicios en más de 70 lenguajes con mentores voluntarios.",
-              "tags": [
-                "open source"
-              ]
-            },
-            {
-              "nombre": "Frontend Mentor",
-              "url": "https://www.frontendmentor.io/",
-              "desc": "Retos con diseños reales para practicar frontend.",
-              "tags": [
-                "freemium"
-              ]
-            },
-            {
-              "nombre": "Advent of Code",
-              "url": "https://adventofcode.com/",
-              "desc": "Puzles de programación cada diciembre, en cualquier lenguaje."
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "otros",
-      "grupo": "Recursos",
-      "nombre": "Otros",
-      "desc": "Cosas interesantes que no encajan en otra categoría.",
+      "grupo": "Diseñar y crear",
+      "nombre": "Juegos, 3D y vídeo",
+      "desc": "Herramientas libres para crear juegos, modelos 3D y vídeos.",
       "secciones": [
         {
-          "nombre": "Creatividad open source",
+          "nombre": "Juegos, 3D y vídeo",
+          "desc": "Motores de juego, modelado 3D, texturas y vídeo hecho con código.",
           "enlaces": [
             {
               "nombre": "Godot",
@@ -4836,6 +4080,912 @@
           ]
         }
       ]
+    },
+    {
+      "id": "devops",
+      "grupo": "Herramientas",
+      "nombre": "DevOps y despliegue",
+      "desc": "Git, contenedores, CI y dónde publicar gratis.",
+      "secciones": [
+        {
+          "nombre": "Git y GitHub",
+          "desc": "Aprender Git y automatizar con GitHub Actions.",
+          "enlaces": [
+            {
+              "nombre": "Pro Git",
+              "url": "https://git-scm.com/book/es/v2",
+              "desc": "El libro oficial de Git, gratis.",
+              "tags": [
+                "oficial",
+                "español"
+              ]
+            },
+            {
+              "nombre": "GitHub Docs",
+              "url": "https://docs.github.com/es",
+              "desc": "Documentación de GitHub, Actions y Pages.",
+              "tags": [
+                "oficial",
+                "español"
+              ]
+            },
+            {
+              "nombre": "GitHub Actions",
+              "url": "https://docs.github.com/es/actions",
+              "desc": "CI/CD integrado en GitHub; gratis en repos públicos.",
+              "tags": [
+                "oficial",
+                "español"
+              ]
+            },
+            {
+              "nombre": "act",
+              "url": "https://github.com/nektos/act",
+              "desc": "Ejecuta tus GitHub Actions en local antes de hacer push.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Seguridad del código",
+          "desc": "Encontrar vulnerabilidades y secretos filtrados antes de publicar.",
+          "enlaces": [
+            {
+              "nombre": "Semgrep",
+              "url": "https://github.com/semgrep/semgrep",
+              "desc": "Análisis estático en más de 30 lenguajes: busca fallos y vulnerabilidades con reglas legibles. El motor es libre.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Betterleaks",
+              "url": "https://github.com/betterleaks/betterleaks",
+              "desc": "Busca secretos filtrados (claves de API, credenciales) en el código y el historial de git.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Contenedores",
+          "desc": "Empaquetar tu app con todo lo que necesita.",
+          "enlaces": [
+            {
+              "nombre": "Docker Docs",
+              "url": "https://docs.docker.com/",
+              "desc": "Imágenes, contenedores y Docker Compose.",
+              "tags": [
+                "oficial"
+              ]
+            },
+            {
+              "nombre": "Podman",
+              "url": "https://podman.io/",
+              "desc": "Alternativa a Docker sin demonio y sin root.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Servidores",
+          "desc": "Montar tu propio servidor con HTTPS.",
+          "enlaces": [
+            {
+              "nombre": "Caddy",
+              "url": "https://caddyserver.com/",
+              "desc": "Servidor web con HTTPS automático y configuración mínima.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Coolify",
+              "url": "https://coolify.io/",
+              "desc": "Tu propio Heroku/Vercel en un VPS.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Let's Encrypt",
+              "url": "https://letsencrypt.org/es/",
+              "desc": "Certificados HTTPS gratuitos.",
+              "tags": [
+                "español"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Monitorización y analítica",
+          "desc": "Saber si tu web está caída, qué errores da y quién la visita.",
+          "enlaces": [
+            {
+              "nombre": "Uptime Kuma",
+              "url": "https://github.com/louislam/uptime-kuma",
+              "desc": "Monitor de disponibilidad autoalojado con alertas y páginas de estado.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Gatus",
+              "url": "https://gatus.io/",
+              "desc": "Monitorización definida en YAML, junto a tu infraestructura.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Upptime",
+              "url": "https://upptime.js.org/",
+              "desc": "Monitor y página de estado que funcionan solo con GitHub Actions.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Umami",
+              "url": "https://umami.is/",
+              "desc": "Analítica web sencilla y respetuosa con la privacidad.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Plausible",
+              "url": "https://plausible.io/",
+              "desc": "Analítica sin cookies; la Community Edition se autoaloja gratis.",
+              "tags": [
+                "open source",
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "GlitchTip",
+              "url": "https://glitchtip.com/",
+              "desc": "Seguimiento de errores compatible con los SDK de Sentry.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Prometheus",
+              "url": "https://prometheus.io/",
+              "desc": "Métricas y alertas; el estándar junto a Grafana.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Grafana",
+              "url": "https://grafana.com/",
+              "desc": "Dashboards para métricas, logs y trazas.",
+              "tags": [
+                "open source",
+                "freemium"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Hosting con plan gratis",
+          "desc": "Dónde publicar sin pagar.",
+          "enlaces": [
+            {
+              "nombre": "GitHub Pages",
+              "url": "https://docs.github.com/es/pages",
+              "desc": "Webs estáticas gratis desde un repositorio (esta misma página).",
+              "tags": [
+                "español"
+              ]
+            },
+            {
+              "nombre": "Cloudflare Pages",
+              "url": "https://pages.cloudflare.com/",
+              "desc": "Webs estáticas y full-stack con un plan gratis muy generoso.",
+              "tags": [
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "Netlify",
+              "url": "https://www.netlify.com/",
+              "desc": "Despliegue de webs con previews por rama.",
+              "tags": [
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "Vercel",
+              "url": "https://vercel.com/",
+              "desc": "Despliegue optimizado para Next.js; el plan Hobby es gratis para uso personal.",
+              "tags": [
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "Render",
+              "url": "https://render.com/",
+              "desc": "Webs, APIs y bases de datos con plan gratis (se duerme sin tráfico).",
+              "tags": [
+                "freemium"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "utilidades",
+      "grupo": "Herramientas",
+      "nombre": "Editores y utilidades",
+      "desc": "Editores, clientes de API y pequeñas herramientas del día a día.",
+      "secciones": [
+        {
+          "nombre": "Editores",
+          "desc": "Dónde escribir el código.",
+          "enlaces": [
+            {
+              "nombre": "VS Code",
+              "url": "https://code.visualstudio.com/",
+              "desc": "El editor más usado, con extensiones para todo.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "VSCodium",
+              "url": "https://vscodium.com/",
+              "desc": "VS Code sin telemetría ni marca de Microsoft.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Zed",
+              "url": "https://zed.dev/",
+              "desc": "Editor muy rápido escrito en Rust, con colaboración en tiempo real.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Neovim",
+              "url": "https://neovim.io/",
+              "desc": "Vim moderno y extensible con Lua.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "APIs",
+          "desc": "Probar APIs y conseguir datos de ejemplo.",
+          "enlaces": [
+            {
+              "nombre": "Hoppscotch",
+              "url": "https://hoppscotch.io/",
+              "desc": "Alternativa a Postman en el navegador, sin cuenta.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Bruno",
+              "url": "https://www.usebruno.com/",
+              "desc": "Cliente de APIs que guarda las colecciones como archivos en tu repo.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Public APIs",
+              "url": "https://github.com/public-apis/public-apis",
+              "desc": "Lista enorme de APIs gratuitas para proyectos.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "JSONPlaceholder",
+              "url": "https://jsonplaceholder.typicode.com/",
+              "desc": "API falsa gratis para pruebas y prototipos."
+            }
+          ]
+        },
+        {
+          "nombre": "Terminal",
+          "desc": "Entender comandos y mejorar el prompt.",
+          "enlaces": [
+            {
+              "nombre": "tldr pages",
+              "url": "https://tldr.sh/",
+              "desc": "Páginas man resumidas con ejemplos prácticos.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "explainshell",
+              "url": "https://explainshell.com/",
+              "desc": "Pega un comando y te explica cada parte.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Starship",
+              "url": "https://starship.rs/es-ES/",
+              "desc": "Prompt rápido y personalizable para cualquier shell.",
+              "tags": [
+                "open source",
+                "español"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Diagramas y documentos",
+          "desc": "Diagramas y documentos escritos como texto.",
+          "enlaces": [
+            {
+              "nombre": "Mermaid",
+              "url": "https://mermaid.js.org/",
+              "desc": "Diagramas desde texto; se ven directamente en GitHub, Notion y Obsidian.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "D2",
+              "url": "https://d2lang.com/",
+              "desc": "Diagramas como código con mejor maquetación automática.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Typst",
+              "url": "https://typst.app/",
+              "desc": "Alternativa moderna a LaTeX: sintaxis simple y compilación instantánea.",
+              "tags": [
+                "open source",
+                "freemium"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Utilidades web",
+          "desc": "Pequeñas herramientas del día a día, en el navegador.",
+          "enlaces": [
+            {
+              "nombre": "DevDocs",
+              "url": "https://devdocs.io/",
+              "desc": "Cientos de documentaciones en un solo buscador, también sin conexión.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "regex101",
+              "url": "https://regex101.com/",
+              "desc": "Prueba y entiende expresiones regulares paso a paso."
+            },
+            {
+              "nombre": "crontab.guru",
+              "url": "https://crontab.guru/",
+              "desc": "Traduce expresiones cron a lenguaje humano."
+            },
+            {
+              "nombre": "transform.tools",
+              "url": "https://transform.tools/",
+              "desc": "Convierte JSON a tipos TypeScript, Rust, Go, Zod y mucho más.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "JSON Crack",
+              "url": "https://jsoncrack.com/",
+              "desc": "Visualiza JSON como un grafo navegable.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Excalidraw",
+              "url": "https://excalidraw.com/",
+              "desc": "Pizarra para diagramas con aspecto dibujado a mano.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Squoosh",
+              "url": "https://squoosh.app/",
+              "desc": "Comprime y convierte imágenes en el navegador.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "ray.so",
+              "url": "https://ray.so/",
+              "desc": "Capturas bonitas de fragmentos de código."
+            }
+          ]
+        },
+        {
+          "nombre": "Grabar pantalla",
+          "desc": "Grabar demos y tutoriales.",
+          "enlaces": [
+            {
+              "nombre": "OBS Studio",
+              "url": "https://obsproject.com/",
+              "desc": "Grabación y streaming, el más completo.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "OpenScreen",
+              "url": "https://github.com/siddharthvaddem/openscreen",
+              "desc": "Demos de producto con zoom, anotaciones y fondos (alternativa a Screen Studio). Aún sin audio.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "documentos",
+      "grupo": "Herramientas",
+      "nombre": "Documentos y conversión",
+      "desc": "Convertir y extraer documentos, vídeo, imágenes y webs.",
+      "secciones": [
+        {
+          "nombre": "PDF y documentos a Markdown",
+          "desc": "Sacar el contenido de PDFs y Office para leerlo o dárselo a una IA.",
+          "enlaces": [
+            {
+              "nombre": "MarkItDown",
+              "url": "https://github.com/microsoft/markitdown",
+              "desc": "De Microsoft: convierte PDF, Office, HTML e imágenes a Markdown. Ligero, sin GPU.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Docling",
+              "url": "https://github.com/docling-project/docling",
+              "desc": "De IBM: PDFs con tablas y estructura a Markdown o JSON, en local.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "MinerU",
+              "url": "https://github.com/opendatalab/MinerU",
+              "desc": "PDF escaneados, tablas y fórmulas a Markdown/JSON con OCR. Desde la 3.1 usa una licencia propia basada en Apache 2.0 (antes AGPL).",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Marker",
+              "url": "https://github.com/datalab-to/marker",
+              "desc": "PDF a Markdown muy preciso con modelos propios. Código GPL; los modelos son gratis solo para uso personal o empresas pequeñas.",
+              "tags": [
+                "source-available"
+              ]
+            },
+            {
+              "nombre": "OXR",
+              "url": "https://github.com/SoMarkAI/OXR",
+              "desc": "Modelo de 1,3B (oct. 2026) que parsea documentos con coordenadas de cada elemento. Sus benchmarks son propios y necesita GPU de 24 GB; pruébalo solo si los anteriores se quedan cortos."
+            }
+          ]
+        },
+        {
+          "nombre": "Web a Markdown (para IA)",
+          "desc": "Convertir páginas web en texto limpio.",
+          "enlaces": [
+            {
+              "nombre": "Jina Reader",
+              "url": "https://jina.ai/reader/",
+              "desc": "Antepón r.jina.ai/ a cualquier URL y obtienes la página en Markdown limpio.",
+              "tags": [
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "Crawl4AI",
+              "url": "https://github.com/unclecode/crawl4ai",
+              "desc": "Rastreador en Python que saca webs a Markdown listo para LLMs.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Firecrawl",
+              "url": "https://www.firecrawl.dev/",
+              "desc": "Rastrea webs enteras a Markdown o JSON; autoalojable (AGPL) o en la nube con plan gratis.",
+              "tags": [
+                "open source",
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "Trafilatura",
+              "url": "https://trafilatura.readthedocs.io/",
+              "desc": "Extrae el texto principal de una página quitando menús y anuncios.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Convertir formatos",
+          "desc": "Cambiar de formato documentos, vídeo, audio e imágenes.",
+          "enlaces": [
+            {
+              "nombre": "Pandoc",
+              "url": "https://pandoc.org/",
+              "desc": "La navaja suiza de documentos: Markdown, Word, PDF, HTML, LaTeX, EPUB…",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "FFmpeg",
+              "url": "https://ffmpeg.org/",
+              "desc": "Convierte, recorta y comprime cualquier vídeo o audio desde la terminal.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "ImageMagick",
+              "url": "https://imagemagick.org/",
+              "desc": "Convierte y edita imágenes por lotes desde la terminal.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "HandBrake",
+              "url": "https://handbrake.fr/",
+              "desc": "Recomprime vídeos con interfaz gráfica.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "LibreOffice",
+              "url": "https://www.libreoffice.org/",
+              "desc": "Suite ofimática libre; en modo headless convierte Office a PDF por lotes.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "OCR (texto de imágenes)",
+          "desc": "Sacar el texto de imágenes y escaneos.",
+          "enlaces": [
+            {
+              "nombre": "Tesseract",
+              "url": "https://github.com/tesseract-ocr/tesseract",
+              "desc": "El motor de OCR clásico, con más de 100 idiomas.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "OCRmyPDF",
+              "url": "https://ocrmypdf.readthedocs.io/",
+              "desc": "Añade una capa de texto buscable a PDFs escaneados.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "PaddleOCR",
+              "url": "https://github.com/PaddlePaddle/PaddleOCR",
+              "desc": "OCR moderno con buena precisión en tablas y textos difíciles.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Unlimited-OCR",
+              "url": "https://github.com/baidu/Unlimited-OCR",
+              "desc": "Modelo de Baidu (3B, pesos abiertos) que procesa PDFs largos de una pasada manteniendo el contexto entre páginas: texto, tablas y fórmulas. En local con vLLM u Ollama.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Herramientas PDF",
+          "desc": "Unir, dividir, firmar, ver y editar PDFs.",
+          "enlaces": [
+            {
+              "nombre": "Stirling-PDF",
+              "url": "https://www.stirlingpdf.com/",
+              "desc": "Unir, dividir, comprimir, firmar y convertir PDFs; autoalojable.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "PDF24 Tools",
+              "url": "https://tools.pdf24.org/es/",
+              "desc": "Decenas de herramientas PDF gratis en el navegador o como app de Windows.",
+              "tags": [
+                "español"
+              ]
+            },
+            {
+              "nombre": "qpdf",
+              "url": "https://qpdf.sourceforge.io/",
+              "desc": "Manipula PDFs desde la terminal: unir, cifrar, reparar.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "PDF.js",
+              "url": "https://mozilla.github.io/pdf.js/",
+              "desc": "Visor de PDF de Mozilla para incrustar en tu web.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "PdfCraft",
+              "url": "https://github.com/storytold/pdfcraft",
+              "desc": "Lector y editor de PDF escrito desde cero en Rust: abre al instante, sin cuenta ni telemetría, guardado atómico.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Datos (JSON y CSV)",
+          "desc": "Explorar y transformar datos desde la terminal.",
+          "enlaces": [
+            {
+              "nombre": "jq",
+              "url": "https://jqlang.org/",
+              "desc": "Filtra y transforma JSON desde la terminal.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "VisiData",
+              "url": "https://www.visidata.org/",
+              "desc": "Explora CSV, Excel y JSON como una hoja de cálculo en la terminal.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        }
+      ],
+      "nota": "Muchas sirven para preparar documentos antes de dárselos a una IA."
+    },
+    {
+      "id": "aprender",
+      "grupo": "Aprender y estar al día",
+      "nombre": "Aprender",
+      "desc": "Cursos, rutas y sitios para practicar.",
+      "secciones": [
+        {
+          "nombre": "Rutas y cursos",
+          "desc": "Por dónde empezar y en qué orden.",
+          "enlaces": [
+            {
+              "nombre": "roadmap.sh",
+              "url": "https://roadmap.sh/",
+              "desc": "Rutas de aprendizaje por rol y tecnología.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "freeCodeCamp en español",
+              "url": "https://www.freecodecamp.org/espanol/",
+              "desc": "Cursos completos y certificaciones gratuitas de desarrollo web.",
+              "tags": [
+                "español",
+                "open source"
+              ]
+            },
+            {
+              "nombre": "The Odin Project",
+              "url": "https://www.theodinproject.com/",
+              "desc": "Currículo full-stack gratuito basado en proyectos.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "CS50x",
+              "url": "https://cs50.harvard.edu/x/",
+              "desc": "El curso de introducción a la informática de Harvard, gratis."
+            },
+            {
+              "nombre": "MDN: aprende desarrollo web",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+              "desc": "Currículo de Mozilla de HTML, CSS y JavaScript desde cero.",
+              "tags": [
+                "oficial"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Practicar",
+          "desc": "Ejercicios y retos con corrección.",
+          "enlaces": [
+            {
+              "nombre": "Exercism",
+              "url": "https://exercism.org/",
+              "desc": "Ejercicios en más de 70 lenguajes con mentores voluntarios.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Frontend Mentor",
+              "url": "https://www.frontendmentor.io/",
+              "desc": "Retos con diseños reales para practicar frontend.",
+              "tags": [
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "Advent of Code",
+              "url": "https://adventofcode.com/",
+              "desc": "Puzles de programación cada diciembre, en cualquier lenguaje."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "al-dia",
+      "grupo": "Aprender y estar al día",
+      "nombre": "Estar al día",
+      "desc": "Pocas fuentes y buenas en vez del timeline.",
+      "secciones": [
+        {
+          "nombre": "Leer cada semana",
+          "desc": "Boletines y blogs que filtran lo importante.",
+          "enlaces": [
+            {
+              "nombre": "Simon Willison",
+              "url": "https://simonwillison.net/",
+              "desc": "Prueba cada novedad y enseña lo que funciona y lo que no. El mejor filtro para desarrolladores."
+            },
+            {
+              "nombre": "Latent Space",
+              "url": "https://www.latent.space/",
+              "desc": "Newsletter y podcast para ingenieros de IA; incluye el resumen diario AI News.",
+              "tags": [
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "Interconnects",
+              "url": "https://www.interconnects.ai/",
+              "desc": "Nathan Lambert: modelos abiertos, post-training y razonamiento, con rigor técnico.",
+              "tags": [
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "Import AI",
+              "url": "https://jack-clark.net/",
+              "desc": "Resumen semanal de investigación y política de Jack Clark (cofundador de Anthropic)."
+            },
+            {
+              "nombre": "One Useful Thing",
+              "url": "https://www.oneusefulthing.org/",
+              "desc": "Ethan Mollick: cómo usar la IA en el trabajo real, con experimentos.",
+              "tags": [
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "Ahead of AI",
+              "url": "https://magazine.sebastianraschka.com/",
+              "desc": "Sebastian Raschka explica cómo funcionan los LLM por dentro.",
+              "tags": [
+                "freemium"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Comparar modelos con datos",
+          "desc": "Rankings y benchmarks para elegir modelo.",
+          "enlaces": [
+            {
+              "nombre": "Artificial Analysis",
+              "url": "https://artificialanalysis.ai/",
+              "desc": "Compara modelos por calidad, precio y velocidad con sus propias pruebas."
+            },
+            {
+              "nombre": "SWE-rebench",
+              "url": "https://swe-rebench.com/",
+              "desc": "Ranking de agentes de código con tareas nuevas cada mes, para evitar la contaminación de SWE-bench."
+            },
+            {
+              "nombre": "METR",
+              "url": "https://metr.org/",
+              "desc": "Mide cuánto tiempo de trabajo humano pueden hacer los agentes y su efecto real en la productividad."
+            },
+            {
+              "nombre": "Epoch AI",
+              "url": "https://epoch.ai/",
+              "desc": "Datos y tendencias de modelos: cómputo, coste y benchmarks."
+            },
+            {
+              "nombre": "LMArena",
+              "url": "https://lmarena.ai/",
+              "desc": "Ranking por votos de usuarios. Úsalo con cuidado: premia el estilo y los laboratorios pueden probar variantes en privado."
+            }
+          ]
+        },
+        {
+          "nombre": "Novedades de herramientas",
+          "desc": "Qué proyectos están creciendo.",
+          "enlaces": [
+            {
+              "nombre": "Best of JS",
+              "url": "https://bestofjs.org/",
+              "desc": "Los proyectos JavaScript que más crecen, filtrados y por categoría.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "JavaScript Rising Stars",
+              "url": "https://risingstars.js.org/",
+              "desc": "Resumen anual de los proyectos JS que más estrellas ganaron."
+            },
+            {
+              "nombre": "GitHub Trending",
+              "url": "https://github.com/trending",
+              "desc": "Repos que más crecen hoy; útil, pero lleno de modas pasajeras."
+            },
+            {
+              "nombre": "Hacker News",
+              "url": "https://news.ycombinator.com/",
+              "desc": "Noticias técnicas con comentarios muy críticos: buen antídoto contra el hype."
+            }
+          ]
+        }
+      ],
+      "nota": "Antes de creerte una novedad: ¿hay repo o artículo?, ¿las cifras son solo del autor?, ¿el \"gratis\" es real?, ¿resuelve un problema que ya tengas?"
     }
   ]
 }
