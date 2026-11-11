@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-29",
+  "actualizado": "2026-11-11",
   "categorias": [
     {
       "id": "python",
@@ -1389,6 +1389,40 @@
                 "freemium",
                 "animación"
               ]
+            },
+            {
+              "nombre": "coss ui",
+              "url": "https://coss.com/ui",
+              "desc": "Componentes modernos para React, instalables desde el registro de shadcn.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "beUI",
+              "url": "https://beui.dev/",
+              "desc": "Componentes animados para React y React Native; la librería pública es MIT, hay un Pro de pago.",
+              "tags": [
+                "open source",
+                "freemium",
+                "animación"
+              ]
+            },
+            {
+              "nombre": "ObsidianUI",
+              "url": "https://obsidianui.dev/",
+              "desc": "Componentes con React y Tailwind, licencia MIT.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Astryx",
+              "url": "https://github.com/meta/astryx",
+              "desc": "Sistema de diseño de Meta, personalizable y preparado para agentes.",
+              "tags": [
+                "open source"
+              ]
             }
           ]
         },
@@ -1606,6 +1640,14 @@
               "nombre": "Tremor",
               "url": "https://www.tremor.so/",
               "desc": "Componentes de dashboard y gráficas con Tailwind.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Bklit UI",
+              "url": "https://bklit.com/docs/components",
+              "desc": "Componentes de gráficas open source, instalables desde el registro de shadcn.",
               "tags": [
                 "open source"
               ]
@@ -1935,6 +1977,11 @@
               "nombre": "CSS-Tricks",
               "url": "https://css-tricks.com/",
               "desc": "Guías de referencia de flexbox, grid y mucho más."
+            },
+            {
+              "nombre": "Defensive CSS",
+              "url": "https://defensivecss.dev/",
+              "desc": "Patrones para que el CSS no se rompa con contenido real: textos largos, imágenes que faltan, flex que desborda. Pídele al agente que lo siga."
             }
           ]
         },
@@ -2040,6 +2087,24 @@
                 "oficial",
                 "animación"
               ]
+            },
+            {
+              "nombre": "Animaciones por scroll",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations",
+              "desc": "Animaciones ligadas al scroll solo con CSS (animation-timeline), ya en todos los navegadores modernos.",
+              "tags": [
+                "oficial",
+                "animación"
+              ]
+            },
+            {
+              "nombre": "Kinetics",
+              "url": "https://kinetics.colorion.co/",
+              "desc": "Unas 160 animaciones con física de muelle en CSS y React, con su prompt para copiar.",
+              "tags": [
+                "freemium",
+                "animación"
+              ]
             }
           ]
         },
@@ -2060,6 +2125,16 @@
               "nombre": "Shadow Palette Generator",
               "url": "https://www.joshwcomeau.com/shadow-palette/",
               "desc": "Sombras realistas y coherentes en CSS."
+            },
+            {
+              "nombre": "BG.IBELICK",
+              "url": "https://bg.ibelick.com/",
+              "desc": "Fondos modernos listos para copiar en Tailwind o CSS."
+            },
+            {
+              "nombre": "UI Colors",
+              "url": "https://uicolors.app/",
+              "desc": "A partir de un color de marca genera toda la escala de tonos de Tailwind."
             }
           ]
         }
@@ -2568,6 +2643,27 @@
               "nombre": "act",
               "url": "https://github.com/nektos/act",
               "desc": "Ejecuta tus GitHub Actions en local antes de hacer push.",
+              "tags": [
+                "open source"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Seguridad del código",
+          "enlaces": [
+            {
+              "nombre": "Semgrep",
+              "url": "https://github.com/semgrep/semgrep",
+              "desc": "Análisis estático en más de 30 lenguajes: busca fallos y vulnerabilidades con reglas legibles. El motor es libre.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Betterleaks",
+              "url": "https://github.com/betterleaks/betterleaks",
+              "desc": "Busca secretos filtrados (claves de API, credenciales) en el código y el historial de git.",
               "tags": [
                 "open source"
               ]
@@ -3189,6 +3285,22 @@
               "nombre": "Claude Code's Next Era (Latent Space)",
               "url": "https://latent.space/p/thariq",
               "desc": "Entrevista a Thariq Shihipar, del equipo de Claude Code: dar el contexto al principio, CLAUDE.md mínimo, anotar decisiones y descubrir lo que no sabes antes de programar."
+            },
+            {
+              "nombre": "Learn Harness Engineering",
+              "url": "https://walkinglabs.github.io/learn-harness-engineering/",
+              "desc": "Tutorial desde cero de harness engineering: contexto, herramientas, hooks y evaluación alrededor del modelo.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "AGENTS.md",
+              "url": "https://agents.md/",
+              "desc": "Formato abierto para dar instrucciones a los agentes de programación, leído por Codex, Cursor y otros.",
+              "tags": [
+                "open source"
+              ]
             }
           ]
         },
@@ -3279,6 +3391,11 @@
               "tags": [
                 "open source"
               ]
+            },
+            {
+              "nombre": "awesome-claude-code",
+              "url": "https://github.com/hesreallyhim/awesome-claude-code",
+              "desc": "La lista curada más grande de skills, hooks, comandos y herramientas para Claude Code."
             }
           ]
         },
@@ -3355,6 +3472,27 @@
               "nombre": "Repos LLM Wiki",
               "url": "https://github.com/topics/karpathy-llm-wiki",
               "desc": "Todas las variantes del patrón LLM Wiki de Karpathy para Obsidian y agentes."
+            },
+            {
+              "nombre": "MemPalace",
+              "url": "https://github.com/MemPalace/mempalace",
+              "desc": "Memoria local para agentes: guarda el texto tal cual por proyectos y temas, con MCP y hooks para Claude Code. Sin API ni nube; las cifras de benchmark son suyas.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "answer-me-with-html",
+              "url": "https://github.com/QingYunA/answer-me-with-html",
+              "desc": "Skill que responde las preguntas complejas con una página HTML legible (tablas, diagramas, código) en lugar de un Markdown larguísimo.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "CLAUDE.md de Karpathy",
+              "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+              "desc": "Un solo CLAUDE.md con las observaciones de Karpathy: pensar antes, simplicidad y cambios quirúrgicos (cada línea cambiada responde a lo pedido). Sin licencia declarada."
             }
           ]
         },
@@ -3398,6 +3536,31 @@
               "nombre": "frontend-design-direction",
               "url": "https://github.com/affaan-m/ECC/tree/main/skills/frontend-design-direction",
               "desc": "Fija una dirección visual propia del producto antes de construir la interfaz.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "unslop",
+              "url": "https://github.com/heydamir/unslop",
+              "desc": "Detecta el aspecto \"hecho con IA\" (degradados morados, brillos, emojis) y rediseña la pantalla pasada a pasada. Sirve en cualquier framework y en una web en vivo.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "modern-web-guidance",
+              "url": "https://github.com/GoogleChrome/modern-web-guidance",
+              "desc": "De Google Chrome: evita que el agente use patrones y APIs web desfasados; buenas prácticas actuales para Chrome, Edge, Firefox y Safari.",
+              "tags": [
+                "oficial",
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Anatomy",
+              "url": "https://github.com/wheresryan22/anatomy",
+              "desc": "Ilustraciones isométricas SVG detalladas e interactivas de máquinas y sistemas, para landings y webs de producto.",
               "tags": [
                 "open source"
               ]
@@ -3459,6 +3622,15 @@
               "nombre": "Plugin Engineering",
               "url": "https://github.com/anthropics/knowledge-work-plugins",
               "desc": "Plugin de Anthropic con tech-debt, deploy-checklist, architecture, system-design y debug.",
+              "tags": [
+                "oficial",
+                "open source"
+              ]
+            },
+            {
+              "nombre": "Elephant-Goldfish Model",
+              "url": "https://github.com/google/elephant-goldfish-model",
+              "desc": "Plugin de Google: un agente con todo el contexto redacta la especificación y revisores sin la conversación previa la revisan contra el código.",
               "tags": [
                 "oficial",
                 "open source"
@@ -3540,6 +3712,14 @@
               "tags": [
                 "open source"
               ]
+            },
+            {
+              "nombre": "cc-safety-net",
+              "url": "https://github.com/kenryu42/cc-safety-net",
+              "desc": "Hook que bloquea antes de ejecutarse los comandos destructivos de git y del sistema de archivos que lanza un agente.",
+              "tags": [
+                "open source"
+              ]
             }
           ]
         },
@@ -3604,6 +3784,22 @@
               "nombre": "Shannon",
               "url": "https://github.com/KeygraphHQ/shannon",
               "desc": "Pentester con IA para tus propias apps que solo informa lo que consigue explotar. La edición Lite es AGPL.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "session-lens",
+              "url": "https://github.com/neokn/session-lens",
+              "desc": "Panel /session-lens: en qué se va el contexto y los tokens de cada agente y subagente, y cuántos turnos quedan antes de compactar. Recién publicado; necesita jq.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "kanzo",
+              "url": "https://github.com/emanuele-em/kanzo",
+              "desc": "Kanban autoalojado que también es servidor MCP: tú y tus agentes compartís la lista de tareas. Un binario, sin cuenta; no lo expongas a la red.",
               "tags": [
                 "open source"
               ]
@@ -3906,6 +4102,14 @@
               "tags": [
                 "open source"
               ]
+            },
+            {
+              "nombre": "Unlimited-OCR",
+              "url": "https://github.com/baidu/Unlimited-OCR",
+              "desc": "Modelo de Baidu (3B, pesos abiertos) que procesa PDFs largos de una pasada manteniendo el contexto entre páginas: texto, tablas y fórmulas. En local con vLLM u Ollama.",
+              "tags": [
+                "open source"
+              ]
             }
           ]
         },
@@ -3940,6 +4144,14 @@
               "nombre": "PDF.js",
               "url": "https://mozilla.github.io/pdf.js/",
               "desc": "Visor de PDF de Mozilla para incrustar en tu web.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "PdfCraft",
+              "url": "https://github.com/storytold/pdfcraft",
+              "desc": "Lector y editor de PDF escrito desde cero en Rust: abre al instante, sin cuenta ni telemetría, guardado atómico.",
               "tags": [
                 "open source"
               ]
@@ -4168,6 +4380,49 @@
               "tags": [
                 "freemium"
               ]
+            },
+            {
+              "nombre": "Mobbin",
+              "url": "https://mobbin.com/",
+              "desc": "La mayor biblioteca de pantallas y flujos de apps reales, móvil y web; el plan gratis es limitado.",
+              "tags": [
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "Land-book",
+              "url": "https://land-book.com/",
+              "desc": "Galería de landings reales para estudiar antes de diseñar.",
+              "tags": [
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "Recent",
+              "url": "https://recent.design/",
+              "desc": "Galería de inspiración de diseño web reciente."
+            },
+            {
+              "nombre": "Landings",
+              "url": "https://landings.dev/",
+              "desc": "Ejemplos de landing pages reales."
+            },
+            {
+              "nombre": "60fps",
+              "url": "https://60fps.design/",
+              "desc": "Animaciones e interacciones de apps móviles y web; parte del contenido es Pro.",
+              "tags": [
+                "freemium",
+                "animación"
+              ]
+            },
+            {
+              "nombre": "Rebrand Gallery",
+              "url": "https://rebrand.gallery/",
+              "desc": "Ejemplos de rebranding e identidad de marca, antes y después.",
+              "tags": [
+                "freemium"
+              ]
             }
           ]
         },
@@ -4183,6 +4438,11 @@
               "nombre": "bookmarks.design",
               "url": "https://www.bookmarks.design/",
               "desc": "Lista curada de recursos para diseñadores, por categoría."
+            },
+            {
+              "nombre": "UI UX Showcase",
+              "url": "https://uiuxshowcase.com/",
+              "desc": "Directorio de recursos de diseño, plantillas y herramientas por categoría."
             }
           ]
         },
@@ -4212,6 +4472,74 @@
               "tags": [
                 "freemium"
               ]
+            },
+            {
+              "nombre": "Lospec",
+              "url": "https://lospec.com/",
+              "desc": "Paletas, tutoriales y herramientas para pixel art, gratis."
+            },
+            {
+              "nombre": "Aseprite",
+              "url": "https://www.aseprite.org/",
+              "desc": "Editor de sprites y pixel art; de pago, pero el código es público y puedes compilarlo.",
+              "tags": [
+                "source-available"
+              ]
+            },
+            {
+              "nombre": "Dithermark",
+              "url": "https://dithermark.com/",
+              "desc": "Aplica algoritmos de dithering a imágenes en el navegador para un efecto retro.",
+              "tags": [
+                "open source"
+              ]
+            },
+            {
+              "nombre": "HalftonePro",
+              "url": "https://halftonepro.com/",
+              "desc": "Generador de tramas de semitono vectoriales; gratis con límites.",
+              "tags": [
+                "freemium"
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Moodboards",
+          "enlaces": [
+            {
+              "nombre": "Cosmos",
+              "url": "https://www.cosmos.so/",
+              "desc": "Moodboards y colecciones visuales, gratis."
+            },
+            {
+              "nombre": "Are.na",
+              "url": "https://www.are.na/",
+              "desc": "Guarda y conecta referencias en canales; plan gratis.",
+              "tags": [
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "Savee",
+              "url": "https://savee.com/",
+              "desc": "Guarda inspiración visual de cualquier web en tableros.",
+              "tags": [
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "Milanote",
+              "url": "https://milanote.com/",
+              "desc": "Tableros para organizar proyectos creativos con notas e imágenes.",
+              "tags": [
+                "freemium"
+              ]
+            },
+            {
+              "nombre": "PureRef",
+              "url": "https://www.pureref.com/",
+              "desc": "App de escritorio para juntar referencias en un lienzo; pagas lo que quieras, también nada."
             }
           ]
         },
@@ -4232,6 +4560,24 @@
               "nombre": "Typescale",
               "url": "https://typescale.com/",
               "desc": "Calcula una escala tipográfica armónica y exporta el CSS."
+            },
+            {
+              "nombre": "Font In Logo",
+              "url": "https://fontinlogo.com/",
+              "desc": "Qué fuente usa el logo de cada marca y su alternativa gratuita."
+            },
+            {
+              "nombre": "Uncut",
+              "url": "https://uncut.wtf/",
+              "desc": "Fuentes gratuitas con personalidad, alternativas a Inter."
+            },
+            {
+              "nombre": "Fontjoy",
+              "url": "https://fontjoy.com/",
+              "desc": "Genera parejas de fuentes que combinan con un clic.",
+              "tags": [
+                "open source"
+              ]
             }
           ]
         },
@@ -4281,6 +4627,15 @@
               "desc": "Genera fondos SVG: olas, blobs, gradientes.",
               "tags": [
                 "freemium"
+              ]
+            },
+            {
+              "nombre": "LottieFiles",
+              "url": "https://lottiefiles.com/",
+              "desc": "Animaciones ligeras Lottie para webs y apps, muchas gratis.",
+              "tags": [
+                "freemium",
+                "animación"
               ]
             }
           ]
